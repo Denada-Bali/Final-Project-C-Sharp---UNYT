@@ -1,0 +1,344 @@
+﻿++Solution 'Final Project C-Sharp - UNYT' ‎(1 of 1 project)
+i:{00000000-0000-0000-0000-000000000000}:Final Project C-Sharp - UNYT.sln
+++Final Project C-Sharp - UNYT
+i:{00000000-0000-0000-0000-000000000000}:Final Project C-Sharp - UNYT
+++Properties
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\properties\
+++References
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:
+++bin
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\bin\
+++obj
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\obj\
+++Resources
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\
+++1603183200426.jpg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\1603183200426.jpg
+++1603183200426_930x607.jpg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\1603183200426_930x607.jpg
+++16031832004261.jpg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\16031832004261.jpg
+++19629052-fish-eye-view-of-singapore-city-skyline-.jpg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\19629052-fish-eye-view-of-singapore-city-skyline-.jpg
+++309-3093004_background-for-graduation-tarpaulin-png-download-transparent-png.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\309-3093004_background-for-graduation-tarpaulin-png-download-transparent-png.png
+++309-3093004_background-for-graduation-tarpaulin-png-download-transparent-png_912x466.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\309-3093004_background-for-graduation-tarpaulin-png-download-transparent-png_912x466.png
+++609aafd56742982d26765f49599e78ed.jpg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\609aafd56742982d26765f49599e78ed.jpg
+++637480204974630000.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\637480204974630000.png
+++90139652_2717574561644083_7831294241966915584_o.jpg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\90139652_2717574561644083_7831294241966915584_o.jpg
+++91wCtlkHt5L._SL1500_ (2).jpg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\91wctlkht5l._sl1500_ (2).jpg
+++91wCtlkHt5L._SL1500_.jpg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\91wctlkht5l._sl1500_.jpg
+++91wCtlkHt5L._SL1500__3_34.jpg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\91wctlkht5l._sl1500__3_34.jpg
+++91wCtlkHt5L._SL1500__3_341.jpg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\91wctlkht5l._sl1500__3_341.jpg
+++91wCtlkHt5L._SL1500_1.jpg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\91wctlkht5l._sl1500_1.jpg
+++91wCtlkHt5L._SL1500_2.jpg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\91wctlkht5l._sl1500_2.jpg
+++AdobeStock_309902495.0.jpeg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\adobestock_309902495.0.jpeg
+++AdobeStock_309902495.01.jpeg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\adobestock_309902495.01.jpeg
+++Capture.PNG
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\capture.png
+++Capture_1_912x466.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\capture_1_912x466.png
+++Capture_912x466.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\capture_912x466.png
+++Capture1_930x607.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\capture1_930x607.png
+++d1tyux6-3de723bb-1688-417b-bc53-fccad0decfd2.jpg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\d1tyux6-3de723bb-1688-417b-bc53-fccad0decfd2.jpg
+++download.jpg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\download.jpg
+++download.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\download.png
+++download1.jpg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\download1.jpg
+++e9896186f55021eeb4a5f39fea811124.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\e9896186f55021eeb4a5f39fea811124.png
+++e9896186f55021eeb4a5f39fea811124_912x466.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\e9896186f55021eeb4a5f39fea811124_912x466.png
+++Empire_1502.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\empire_1502.png
+++Empire_15021.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\empire_15021.png
+++ESC-Logo-Stacked-Orange-1-1.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\esc-logo-stacked-orange-1-1.png
+++g.jpg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\g.jpg
+++GettyImages-1183672865.jpg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\gettyimages-1183672865.jpg
+++images (2).png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\images (2).png
+++images.jpg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\images.jpg
+++images.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\images.png
+++images1.jpg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\images1.jpg
+++images1.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\images1.png
+++images2.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\images2.png
+++images3.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\images3.png
+++images4.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\images4.png
+++images5.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\images5.png
+++images6.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\images6.png
+++images7.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\images7.png
+++images8.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\images8.png
+++kisspng.jpg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\kisspng.jpg
+++lock-icon.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\lock-icon.png
+++logo_unyt_20op.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\logo_unyt_20op.png
+++logo_unyt_20op1.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\logo_unyt_20op1.png
+++logo_unyt_20op2.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\logo_unyt_20op2.png
+++logo_yatay-01 (5).png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\logo_yatay-01 (5).png
+++logo_yatay-01 (5)1.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\logo_yatay-01 (5)1.png
+++pexels-photo-2422588.jpeg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\pexels-photo-2422588.jpeg
+++pic1.jpeg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\pic1.jpeg
+++pic2.jpeg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\pic2.jpeg
+++pic21.jpeg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\pic21.jpeg
+++sk.jpg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\sk.jpg
+++sk_930x607.jpg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\sk_930x607.jpg
+++sky.jpg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\sky.jpg
+++sky1.jpg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\sky1.jpg
+++student.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\student.png
+++tokyo-japan-circa-2015-downtown-260nw-1961539786.jpg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\tokyo-japan-circa-2015-downtown-260nw-1961539786.jpg
+++tokyo-japan-circa-2015-downtown-260nw-19615397861.jpg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\tokyo-japan-circa-2015-downtown-260nw-19615397861.jpg
+++Universiteti_i_New_York-ut_Tiranë.svg.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\universiteti_i_new_york-ut_tiranë.svg.png
+++Universiteti_i_New_York-ut_Tiranë.svg1.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\universiteti_i_new_york-ut_tiranë.svg1.png
+++unnamed.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\unnamed.png
+++unnamed1.png
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\unnamed1.png
+++unyt.jpeg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\unyt.jpeg
+++unyt.jpg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\unyt.jpg
+++unyt_.jpeg
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\resources\unyt_.jpeg
+++App.config
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\app.config
+++ClassDiagram1.cd
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\classdiagram1.cd
+++CourseClass.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\courseclass.cs
+++CourseForm.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\courseform.cs
+++CourseForm.Designer.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\courseform.designer.cs
+++CourseForm.resx
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\courseform.resx
+++DBconnect.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\dbconnect.cs
+++DVGPrinter.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\dvgprinter.cs
+++Login.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\login.cs
+++Login.Designer.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\login.designer.cs
+++Login.resx
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\login.resx
+++MainForm.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\mainform.cs
+++ManageCourse.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\managecourse.cs
+++ManageStudent.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\managestudent.cs
+++MenageScore.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\menagescore.cs
+++packages.config
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\packages.config
+++Print.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\print.cs
+++PrintCourse.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\printcourse.cs
+++PrintScore.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\printscore.cs
+++Program.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\program.cs
+++RegistrationForm.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\registrationform.cs
+++Score.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\score.cs
+++Score.Designer.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\score.designer.cs
+++Score.resx
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\score.resx
+++ScoreClass.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\scoreclass.cs
+++SplashScrean.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\splashscrean.cs
+++SplashScrean.Designer.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\splashscrean.designer.cs
+++SplashScrean.resx
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\splashscrean.resx
+++StudentClass.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\studentclass.cs
+++AssemblyInfo.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\properties\assemblyinfo.cs
+++Resources.resx
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\properties\resources.resx
+++Settings.settings
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\properties\settings.settings
+++Guna.UI2
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:
+++Microsoft.CSharp
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:
+++Microsoft.VisualBasic
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:
+++MySql.Data
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:
+++System
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:
+++System.Core
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:
+++System.Data
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:
+++System.Data.DataSetExtensions
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:
+++System.Data.SQLite
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:
+++System.Deployment
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:
+++System.Drawing
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:
+++System.Management
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:
+++System.Net.Http
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:
+++System.Windows.Forms
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:
+++System.Xml
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:
+++System.Xml.Linq
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:
+++Debug
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\bin\debug\
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\obj\debug\
+++Release
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\bin\release\
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\obj\release\
+++MainForm.Designer.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\mainform.designer.cs
+++MainForm.resx
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\mainform.resx
+++ManageCourse.Designer.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\managecourse.designer.cs
+++ManageCourse.resx
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\managecourse.resx
+++ManageStudent.Designer.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\managestudent.designer.cs
+++ManageStudent.resx
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\managestudent.resx
+++MenageScore.Designer.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\menagescore.designer.cs
+++MenageScore.resx
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\menagescore.resx
+++Print.Designer.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\print.designer.cs
+++Print.resx
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\print.resx
+++PrintCourse.Designer.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\printcourse.designer.cs
+++PrintCourse.resx
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\printcourse.resx
+++PrintScore.Designer.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\printscore.designer.cs
+++PrintScore.resx
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\printscore.resx
+++RegistrationForm.Designer.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\registrationform.designer.cs
+++RegistrationForm.resx
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\registrationform.resx
+++Resources.Designer.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\properties\resources.designer.cs
+++Settings.Designer.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\properties\settings.designer.cs
+++x64
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\bin\debug\x64\
+++x86
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\bin\debug\x86\
+++BouncyCastle.Crypto.dll
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\bin\debug\bouncycastle.crypto.dll
+++Final Project C-Sharp - UNYT.exe
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\bin\debug\final project c-sharp - unyt.exe
+++Final Project C-Sharp - UNYT.exe.config
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\bin\debug\final project c-sharp - unyt.exe.config
+++Final Project C-Sharp - UNYT.pdb
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\bin\debug\final project c-sharp - unyt.pdb
+++Final Project C-Sharp - UNYT.vshost.exe
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\bin\debug\final project c-sharp - unyt.vshost.exe
+++Final Project C-Sharp - UNYT.vshost.exe.config
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\bin\debug\final project c-sharp - unyt.vshost.exe.config
+++Final Project C-Sharp - UNYT.vshost.exe.manifest
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\bin\debug\final project c-sharp - unyt.vshost.exe.manifest
+++Google.Protobuf.dll
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\bin\debug\google.protobuf.dll
+++Guna.UI2.dll
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\bin\debug\guna.ui2.dll
+++K4os.Compression.LZ4.dll
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\bin\debug\k4os.compression.lz4.dll
+++K4os.Compression.LZ4.Streams.dll
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\bin\debug\k4os.compression.lz4.streams.dll
+++K4os.Hash.xxHash.dll
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\bin\debug\k4os.hash.xxhash.dll
+++MySql.Data.dll
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\bin\debug\mysql.data.dll
+++MySql.Data.xml
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\bin\debug\mysql.data.xml
+++System.Buffers.dll
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\bin\debug\system.buffers.dll
+++System.Data.SQLite.dll
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\bin\debug\system.data.sqlite.dll
+++System.Data.SQLite.xml
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\bin\debug\system.data.sqlite.xml
+++System.Memory.dll
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\bin\debug\system.memory.dll
+++System.Runtime.CompilerServices.Unsafe.dll
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\bin\debug\system.runtime.compilerservices.unsafe.dll
+++Ubiety.Dns.Core.dll
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\bin\debug\ubiety.dns.core.dll
+++Zstandard.Net.dll
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\bin\debug\zstandard.net.dll
+++.NETFramework,Version=v4.8.AssemblyAttributes.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\obj\debug\.netframework,version=v4.8.assemblyattributes.cs
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\obj\release\.netframework,version=v4.8.assemblyattributes.cs
+++Final Project C-Sharp - UNYT.csproj.AssemblyReference.cache
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\obj\release\final project c-sharp - unyt.csproj.assemblyreference.cache
+++SQLite.Interop.dll
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\bin\debug\x64\sqlite.interop.dll
+i:{6f8fc28e-3ea0-4467-ae75-f7c9aa720147}:d:\unyt\visual studio 2015\projects\final project c-sharp - unyt\final project c-sharp - unyt\bin\debug\x86\sqlite.interop.dll
