@@ -28,28 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button_sScore = new System.Windows.Forms.Button();
             this.button_sStudent = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.three_year_program_score_rb = new System.Windows.Forms.RadioButton();
             this.button_clear = new System.Windows.Forms.Button();
+            this.fourth_year_program_score_rb = new System.Windows.Forms.RadioButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.comboBox_course = new System.Windows.Forms.ComboBox();
             this.button_add = new System.Windows.Forms.Button();
+            this.textBox_LetterGrade = new System.Windows.Forms.TextBox();
             this.textBox_Grade = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox_stdId = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.DataGridView_student = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox_LetterGrade = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_student)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -96,6 +100,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.groupBox1);
             this.panel2.Controls.Add(this.button_clear);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.comboBox_course);
@@ -113,6 +118,19 @@
             this.panel2.Size = new System.Drawing.Size(1134, 177);
             this.panel2.TabIndex = 23;
             // 
+            // three_year_program_score_rb
+            // 
+            this.three_year_program_score_rb.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.three_year_program_score_rb.AutoSize = true;
+            this.three_year_program_score_rb.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.three_year_program_score_rb.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.three_year_program_score_rb.Location = new System.Drawing.Point(174, 32);
+            this.three_year_program_score_rb.Name = "three_year_program_score_rb";
+            this.three_year_program_score_rb.Size = new System.Drawing.Size(82, 23);
+            this.three_year_program_score_rb.TabIndex = 47;
+            this.three_year_program_score_rb.Text = "3 - Year";
+            this.three_year_program_score_rb.UseVisualStyleBackColor = true;
+            // 
             // button_clear
             // 
             this.button_clear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -127,6 +145,21 @@
             this.button_clear.Text = "Clear";
             this.button_clear.UseVisualStyleBackColor = false;
             this.button_clear.Click += new System.EventHandler(this.button_clear_Click_1);
+            // 
+            // fourth_year_program_score_rb
+            // 
+            this.fourth_year_program_score_rb.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.fourth_year_program_score_rb.AutoSize = true;
+            this.fourth_year_program_score_rb.Checked = true;
+            this.fourth_year_program_score_rb.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.fourth_year_program_score_rb.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.fourth_year_program_score_rb.Location = new System.Drawing.Point(174, -2);
+            this.fourth_year_program_score_rb.Name = "fourth_year_program_score_rb";
+            this.fourth_year_program_score_rb.Size = new System.Drawing.Size(82, 23);
+            this.fourth_year_program_score_rb.TabIndex = 46;
+            this.fourth_year_program_score_rb.TabStop = true;
+            this.fourth_year_program_score_rb.Text = "4 - Year";
+            this.fourth_year_program_score_rb.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
@@ -161,6 +194,16 @@
             this.button_add.UseVisualStyleBackColor = false;
             this.button_add.Click += new System.EventHandler(this.button_add_Click);
             // 
+            // textBox_LetterGrade
+            // 
+            this.textBox_LetterGrade.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBox_LetterGrade.Location = new System.Drawing.Point(153, 119);
+            this.textBox_LetterGrade.Multiline = true;
+            this.textBox_LetterGrade.Name = "textBox_LetterGrade";
+            this.textBox_LetterGrade.Size = new System.Drawing.Size(135, 19);
+            this.textBox_LetterGrade.TabIndex = 25;
+            this.textBox_LetterGrade.Visible = false;
+            // 
             // textBox_Grade
             // 
             this.textBox_Grade.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -188,6 +231,19 @@
             this.textBox_stdId.Name = "textBox_stdId";
             this.textBox_stdId.Size = new System.Drawing.Size(135, 20);
             this.textBox_stdId.TabIndex = 18;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label5.Location = new System.Drawing.Point(79, 119);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 19);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Grade :";
+            this.label5.Visible = false;
             // 
             // label2
             // 
@@ -217,8 +273,8 @@
             // 
             this.DataGridView_student.AllowUserToAddRows = false;
             this.DataGridView_student.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.DataGridView_student.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.DataGridView_student.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.DataGridView_student.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -227,23 +283,23 @@
             this.DataGridView_student.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridView_student.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DataGridView_student.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridView_student.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridView_student.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.DataGridView_student.ColumnHeadersHeight = 24;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridView_student.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridView_student.DefaultCellStyle = dataGridViewCellStyle9;
             this.DataGridView_student.EnableHeadersVisualStyles = false;
             this.DataGridView_student.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DataGridView_student.Location = new System.Drawing.Point(0, 67);
@@ -275,28 +331,18 @@
             this.DataGridView_student.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DataGridView_student.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // label5
+            // groupBox1
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label5.Location = new System.Drawing.Point(79, 119);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 19);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "Grade :";
-            this.label5.Visible = false;
-            // 
-            // textBox_LetterGrade
-            // 
-            this.textBox_LetterGrade.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox_LetterGrade.Location = new System.Drawing.Point(153, 119);
-            this.textBox_LetterGrade.Multiline = true;
-            this.textBox_LetterGrade.Name = "textBox_LetterGrade";
-            this.textBox_LetterGrade.Size = new System.Drawing.Size(135, 19);
-            this.textBox_LetterGrade.TabIndex = 25;
-            this.textBox_LetterGrade.Visible = false;
+            this.groupBox1.Controls.Add(this.fourth_year_program_score_rb);
+            this.groupBox1.Controls.Add(this.three_year_program_score_rb);
+            this.groupBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.groupBox1.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.groupBox1.Location = new System.Drawing.Point(316, 80);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(353, 58);
+            this.groupBox1.TabIndex = 53;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Select Program :";
             // 
             // Score
             // 
@@ -313,6 +359,8 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_student)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -335,5 +383,8 @@
         private Guna.UI2.WinForms.Guna2DataGridView DataGridView_student;
         private System.Windows.Forms.TextBox textBox_LetterGrade;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.RadioButton three_year_program_score_rb;
+        private System.Windows.Forms.RadioButton fourth_year_program_score_rb;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

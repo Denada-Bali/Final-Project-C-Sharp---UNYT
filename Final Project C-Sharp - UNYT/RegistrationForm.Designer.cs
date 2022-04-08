@@ -30,10 +30,13 @@ namespace Final_Project_C_Sharp___UNYT
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.fourth_year_program = new System.Windows.Forms.RadioButton();
+            this.three_year_program = new System.Windows.Forms.RadioButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.textBox_phone = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -47,7 +50,6 @@ namespace Final_Project_C_Sharp___UNYT
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox_Lname = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.textBox_Fname = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -56,14 +58,19 @@ namespace Final_Project_C_Sharp___UNYT
             this.label7 = new System.Windows.Forms.Label();
             this.DataGridView_student = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_student)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_student)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.groupBox2);
+            this.panel2.Controls.Add(this.groupBox1);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.textBox_phone);
             this.panel2.Controls.Add(this.label6);
@@ -72,21 +79,59 @@ namespace Final_Project_C_Sharp___UNYT
             this.panel2.Controls.Add(this.button_upload);
             this.panel2.Controls.Add(this.pictureBox_student);
             this.panel2.Controls.Add(this.textBox_address);
-            this.panel2.Controls.Add(this.radioButton_female);
-            this.panel2.Controls.Add(this.radioButton_male);
             this.panel2.Controls.Add(this.dateTimePicker1);
             this.panel2.Controls.Add(this.textBox_Lname);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.textBox_Fname);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 428);
+            this.panel2.Location = new System.Drawing.Point(0, 435);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1134, 185);
             this.panel2.TabIndex = 16;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.fourth_year_program);
+            this.groupBox1.Controls.Add(this.three_year_program);
+            this.groupBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.groupBox1.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.groupBox1.Location = new System.Drawing.Point(694, 66);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(217, 53);
+            this.groupBox1.TabIndex = 38;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Program :";
+            // 
+            // fourth_year_program
+            // 
+            this.fourth_year_program.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.fourth_year_program.AutoSize = true;
+            this.fourth_year_program.Checked = true;
+            this.fourth_year_program.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.fourth_year_program.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.fourth_year_program.Location = new System.Drawing.Point(112, -4);
+            this.fourth_year_program.Name = "fourth_year_program";
+            this.fourth_year_program.Size = new System.Drawing.Size(82, 23);
+            this.fourth_year_program.TabIndex = 36;
+            this.fourth_year_program.TabStop = true;
+            this.fourth_year_program.Text = "4 - Year";
+            this.fourth_year_program.UseVisualStyleBackColor = true;
+            // 
+            // three_year_program
+            // 
+            this.three_year_program.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.three_year_program.AutoSize = true;
+            this.three_year_program.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.three_year_program.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.three_year_program.Location = new System.Drawing.Point(112, 24);
+            this.three_year_program.Name = "three_year_program";
+            this.three_year_program.Size = new System.Drawing.Size(82, 23);
+            this.three_year_program.TabIndex = 37;
+            this.three_year_program.Text = "3 - Year";
+            this.three_year_program.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
@@ -101,7 +146,7 @@ namespace Final_Project_C_Sharp___UNYT
             // textBox_phone
             // 
             this.textBox_phone.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox_phone.Location = new System.Drawing.Point(667, 29);
+            this.textBox_phone.Location = new System.Drawing.Point(413, 99);
             this.textBox_phone.Name = "textBox_phone";
             this.textBox_phone.Size = new System.Drawing.Size(156, 20);
             this.textBox_phone.TabIndex = 31;
@@ -112,7 +157,7 @@ namespace Final_Project_C_Sharp___UNYT
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label6.Location = new System.Drawing.Point(595, 27);
+            this.label6.Location = new System.Drawing.Point(341, 97);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 19);
             this.label6.TabIndex = 30;
@@ -125,9 +170,9 @@ namespace Final_Project_C_Sharp___UNYT
             this.button_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_add.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.button_add.ForeColor = System.Drawing.Color.White;
-            this.button_add.Location = new System.Drawing.Point(954, 132);
+            this.button_add.Location = new System.Drawing.Point(864, 133);
             this.button_add.Name = "button_add";
-            this.button_add.Size = new System.Drawing.Size(82, 27);
+            this.button_add.Size = new System.Drawing.Size(124, 27);
             this.button_add.TabIndex = 29;
             this.button_add.Text = "Add";
             this.button_add.UseVisualStyleBackColor = false;
@@ -140,9 +185,9 @@ namespace Final_Project_C_Sharp___UNYT
             this.button_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_clear.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.button_clear.ForeColor = System.Drawing.Color.White;
-            this.button_clear.Location = new System.Drawing.Point(1042, 132);
+            this.button_clear.Location = new System.Drawing.Point(1005, 132);
             this.button_clear.Name = "button_clear";
-            this.button_clear.Size = new System.Drawing.Size(80, 27);
+            this.button_clear.Size = new System.Drawing.Size(117, 27);
             this.button_clear.TabIndex = 28;
             this.button_clear.Text = "Clear";
             this.button_clear.UseVisualStyleBackColor = false;
@@ -177,10 +222,10 @@ namespace Final_Project_C_Sharp___UNYT
             // textBox_address
             // 
             this.textBox_address.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox_address.Location = new System.Drawing.Point(414, 133);
+            this.textBox_address.Location = new System.Drawing.Point(414, 138);
             this.textBox_address.Multiline = true;
             this.textBox_address.Name = "textBox_address";
-            this.textBox_address.Size = new System.Drawing.Size(409, 32);
+            this.textBox_address.Size = new System.Drawing.Size(293, 40);
             this.textBox_address.TabIndex = 25;
             // 
             // radioButton_female
@@ -189,7 +234,7 @@ namespace Final_Project_C_Sharp___UNYT
             this.radioButton_female.AutoSize = true;
             this.radioButton_female.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.radioButton_female.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.radioButton_female.Location = new System.Drawing.Point(739, 61);
+            this.radioButton_female.Location = new System.Drawing.Point(72, 21);
             this.radioButton_female.Name = "radioButton_female";
             this.radioButton_female.Size = new System.Drawing.Size(82, 23);
             this.radioButton_female.TabIndex = 24;
@@ -203,7 +248,7 @@ namespace Final_Project_C_Sharp___UNYT
             this.radioButton_male.Checked = true;
             this.radioButton_male.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.radioButton_male.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.radioButton_male.Location = new System.Drawing.Point(667, 60);
+            this.radioButton_male.Location = new System.Drawing.Point(9, 22);
             this.radioButton_male.Name = "radioButton_male";
             this.radioButton_male.Size = new System.Drawing.Size(62, 23);
             this.radioButton_male.TabIndex = 23;
@@ -214,7 +259,7 @@ namespace Final_Project_C_Sharp___UNYT
             // dateTimePicker1
             // 
             this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker1.Location = new System.Drawing.Point(414, 96);
+            this.dateTimePicker1.Location = new System.Drawing.Point(713, 28);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(291, 20);
             this.dateTimePicker1.TabIndex = 22;
@@ -225,7 +270,7 @@ namespace Final_Project_C_Sharp___UNYT
             this.textBox_Lname.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox_Lname.Location = new System.Drawing.Point(414, 60);
             this.textBox_Lname.Name = "textBox_Lname";
-            this.textBox_Lname.Size = new System.Drawing.Size(140, 20);
+            this.textBox_Lname.Size = new System.Drawing.Size(155, 20);
             this.textBox_Lname.TabIndex = 21;
             // 
             // label4
@@ -240,24 +285,12 @@ namespace Final_Project_C_Sharp___UNYT
             this.label4.TabIndex = 20;
             this.label4.Text = "Last Name :";
             // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label2.Location = new System.Drawing.Point(585, 61);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 19);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "Gender :";
-            // 
             // textBox_Fname
             // 
             this.textBox_Fname.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox_Fname.Location = new System.Drawing.Point(414, 26);
             this.textBox_Fname.Name = "textBox_Fname";
-            this.textBox_Fname.Size = new System.Drawing.Size(140, 20);
+            this.textBox_Fname.Size = new System.Drawing.Size(155, 20);
             this.textBox_Fname.TabIndex = 18;
             // 
             // label5
@@ -266,7 +299,7 @@ namespace Final_Project_C_Sharp___UNYT
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label5.Location = new System.Drawing.Point(330, 137);
+            this.label5.Location = new System.Drawing.Point(329, 140);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(83, 19);
             this.label5.TabIndex = 16;
@@ -279,7 +312,7 @@ namespace Final_Project_C_Sharp___UNYT
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label3.Location = new System.Drawing.Point(298, 96);
+            this.label3.Location = new System.Drawing.Point(591, 28);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(116, 19);
             this.label3.TabIndex = 17;
@@ -324,8 +357,8 @@ namespace Final_Project_C_Sharp___UNYT
             // 
             this.DataGridView_student.AllowUserToAddRows = false;
             this.DataGridView_student.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.DataGridView_student.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle46.BackColor = System.Drawing.Color.White;
+            this.DataGridView_student.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle46;
             this.DataGridView_student.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -334,23 +367,23 @@ namespace Final_Project_C_Sharp___UNYT
             this.DataGridView_student.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridView_student.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DataGridView_student.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridView_student.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle47.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            dataGridViewCellStyle47.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridView_student.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle47;
             this.DataGridView_student.ColumnHeadersHeight = 24;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridView_student.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle48.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle48.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            dataGridViewCellStyle48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridView_student.DefaultCellStyle = dataGridViewCellStyle48;
             this.DataGridView_student.EnableHeadersVisualStyles = false;
             this.DataGridView_student.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DataGridView_student.Location = new System.Drawing.Point(0, 58);
@@ -358,7 +391,7 @@ namespace Final_Project_C_Sharp___UNYT
             this.DataGridView_student.RowHeadersVisible = false;
             this.DataGridView_student.RowTemplate.Height = 80;
             this.DataGridView_student.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridView_student.Size = new System.Drawing.Size(1134, 364);
+            this.DataGridView_student.Size = new System.Drawing.Size(1134, 371);
             this.DataGridView_student.TabIndex = 17;
             this.DataGridView_student.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.DataGridView_student.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -387,16 +420,29 @@ namespace Final_Project_C_Sharp___UNYT
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel4.Location = new System.Drawing.Point(0, 424);
+            this.panel4.Location = new System.Drawing.Point(0, 431);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1157, 10);
             this.panel4.TabIndex = 33;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.radioButton_female);
+            this.groupBox2.Controls.Add(this.radioButton_male);
+            this.groupBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.groupBox2.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.groupBox2.Location = new System.Drawing.Point(526, 66);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(162, 53);
+            this.groupBox2.TabIndex = 39;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Gender:";
             // 
             // RegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1134, 613);
+            this.ClientSize = new System.Drawing.Size(1134, 620);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.DataGridView_student);
             this.Controls.Add(this.panel2);
@@ -405,10 +451,14 @@ namespace Final_Project_C_Sharp___UNYT
             this.Load += new System.EventHandler(this.RegistrationForm_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_student)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_student)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -439,7 +489,6 @@ namespace Final_Project_C_Sharp___UNYT
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox textBox_Lname;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox_Fname;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
@@ -448,5 +497,9 @@ namespace Final_Project_C_Sharp___UNYT
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2DataGridView DataGridView_student;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.RadioButton three_year_program;
+        private System.Windows.Forms.RadioButton fourth_year_program;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }

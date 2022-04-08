@@ -122,5 +122,6 @@ namespace Final_Project_C_Sharp___UNYT
             dateTimePicker1.Value = DateTime.Now;
             pictureBox_student.Image = null;
         }
+       
     }
 }

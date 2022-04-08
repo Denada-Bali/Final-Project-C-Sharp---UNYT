@@ -168,6 +168,7 @@ namespace Final_Project_C_Sharp___UNYT
             if (opf.ShowDialog() == DialogResult.OK)
                 pictureBox_student.Image = Image.FromFile(opf.FileName);
         }
+
     }
 }
 

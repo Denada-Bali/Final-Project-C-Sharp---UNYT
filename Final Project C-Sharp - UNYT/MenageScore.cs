@@ -34,7 +34,7 @@ namespace Final_Project_C_Sharp___UNYT
         {
             DataGridView_score.ReadOnly = true;
             // the data is taken from the database
-            DataGridView_score.DataSource = score.getList(new MySqlCommand("SELECT score.StudentId,student.StdFirstName,student.StdLastName,score.CourseName,score.Grade,score.LetterGrade FROM student INNER JOIN score ON score.StudentId=student.StdId"));
+            DataGridView_score.DataSource = score.getList(new MySqlCommand("SELECT score.StudentId,student.StdFirstName,student.StdLastName,score.CourseName,score.Score,score.Grade FROM student INNER JOIN score ON score.StudentId=student.StdId"));
         }
 
         //Display student data from course to textbox
@@ -188,5 +188,7 @@ namespace Final_Project_C_Sharp___UNYT
 
             }
         }
+
+       
     }
 }

@@ -79,5 +79,6 @@ namespace Final_Project_C_Sharp___UNYT
             DataGridView_student.DataSource = student.searchStudent(txtB_search.Text);
             txtB_search.Clear();
         }
+
     }
 }

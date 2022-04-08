@@ -30,7 +30,7 @@ namespace Final_Project_C_Sharp___UNYT
         public void showScore()
         {
             DataGridView_score.ReadOnly = true;
-            DataGridView_score.DataSource = score.getList(new MySqlCommand("SELECT score.StudentId,student.StdFirstName,student.StdLastName,score.CourseName,score.Grade,score.LetterGrade FROM student INNER JOIN score ON score.StudentId=student.StdId"));
+            DataGridView_score.DataSource = score.getList(new MySqlCommand("SELECT score.StudentId,student.StdFirstName,student.StdLastName,score.CourseName,score.Score,score.Grade FROM student INNER JOIN score ON score.StudentId=student.StdId"));
         }
 
         //search the student, and his / her details will  displayed in DataGridView
