@@ -16,7 +16,7 @@ namespace Final_Project_C_Sharp___UNYT
     {
         //mysql connection represent an open connection to my database
         //connection string is a string that specifies information about data source     //The VALUES command specifies the values of an INSERT INTO statement.
-        MySqlCommand command = new MySqlCommand("INSERT INTO `score`(`StudentId`, `CourseName`, `Grade`, `LetterGrade`) VALUES (@stid,@cn,@gra,@lgr)", connect.getconnection);
+        MySqlCommand command = new MySqlCommand("INSERT INTO `score`(`StudentId`, `CourseName`, `Score`, `Grade`) VALUES (@stid,@cn,@gra,@lgr)", connect.getconnection);
         
         // add dates in my database server
         //@stid,@cn,@gra,@lgr

@@ -38,7 +38,7 @@ namespace Final_Project_C_Sharp___UNYT
         private void showScoe()
         {
             // the data is taken from the database
-            DataGridView_student.DataSource = score.getList(new MySqlCommand("SELECT score.StudentId,student.StdFirstName,student.StdLastName,score.CourseName,score.Grade,score.LetterGrade FROM student INNER JOIN score ON score.StudentId=student.StdId"));
+            DataGridView_student.DataSource = score.getList(new MySqlCommand("SELECT score.StudentId,student.StdFirstName,student.StdLastName,score.CourseName,score.Score,score.Grade FROM student INNER JOIN score ON score.StudentId=student.StdId"));
         }
 
         //Display student data from student to textbox
