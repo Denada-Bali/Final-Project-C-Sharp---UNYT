@@ -78,21 +78,90 @@ namespace Final_Project_C_Sharp___UNYT
                 double grade = Convert.ToInt32(textBox_Grade.Text);
                 string LeGrade = textBox_LetterGrade.Text;
 
-                //this condition enters the data (ID, Name, Grade, Letter Grade)
-                if (score.updateScore(stdId, cName, grade, LeGrade))
+                if (grade >= 0 && grade <= 100)
                 {
-                    showScore();  //show score list on datagridview 
-                    button_clear.PerformClick(); //The application automatically deletes the previously entered data
-                    //show a message that a new course has been edited
-                    MessageBox.Show("Grade Edited Complete", "Update Grade", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    LeGrade = "F";
+
+                    if (grade >= 96 && grade <= 100)
+                    {
+                        //MessageBox.Show("A");
+                        LeGrade = "A";
+                    }
+                    else if (grade >= 90 && grade <= 95)
+                    {
+                        //MessageBox.Show("A-");
+                        LeGrade = "A-";
+                    }
+                    else if (grade >= 87 && grade <= 89)
+                    {
+                        //MessageBox.Show("B+");
+                        LeGrade = "B+";
+                    }
+                    else if (grade >= 83 && grade <= 86)
+                    {
+                        //MessageBox.Show("B");
+                        LeGrade = "B";
+                    }
+                    else if (grade >= 80 && grade <= 82)
+                    {
+                        //MessageBox.Show("B-");
+                        LeGrade = "B-";
+                    }
+                    else if (grade >= 77 && grade <= 79)
+                    {
+                        //MessageBox.Show("C+");
+                        LeGrade = "C+";
+                    }
+                    else if (grade >= 73 && grade <= 76)
+                    {
+                        //MessageBox.Show("C");
+                        LeGrade = "C";
+                    }
+                    else if (grade >= 70 && grade <= 72)
+                    {
+                        //MessageBox.Show("C-");
+                        LeGrade = "C-";
+                    }
+                    else if (grade >= 67 && grade <= 69)
+                    {
+                        //MessageBox.Show("D+");
+                        LeGrade = "D+";
+                    }
+                    else if (grade >= 63 && grade <= 66)
+                    {
+                        //MessageBox.Show("D");
+                        LeGrade = "D";
+                    }
+                    else if (grade >= 60 && grade <= 62)
+                    {
+                        //MessageBox.Show("D-");
+                        LeGrade = "D-";
+                    }
+
+
+                    //this condition enters the data (ID, Name, Grade, Letter Grade)
+                    if (score.updateScore(stdId, cName, grade, LeGrade))
+                    {
+                        showScore();  //show score list on datagridview 
+                        button_clear.PerformClick(); //The application automatically deletes the previously entered data
+                                                     //show a message that a new course has been edited
+                        MessageBox.Show("Grade Edited Complete", "Update Grade", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    }
+                    else
+                    {
+                        //shows an error message if the data are not edited
+                        MessageBox.Show("Grade not edit", "Update Grade", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+
 
                 }
                 else
                 {
-                    //shows an error message if the data are not edited
-                    MessageBox.Show("Grade not edit", "Update Grade", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                    MessageBox.Show("Invalid Input!", "Add Grade", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+                }
             }
         }
         //deletes the score from the ID

@@ -150,8 +150,9 @@
             this.textBox_LetterGrade.Location = new System.Drawing.Point(133, 133);
             this.textBox_LetterGrade.Multiline = true;
             this.textBox_LetterGrade.Name = "textBox_LetterGrade";
-            this.textBox_LetterGrade.Size = new System.Drawing.Size(399, 57);
+            this.textBox_LetterGrade.Size = new System.Drawing.Size(135, 17);
             this.textBox_LetterGrade.TabIndex = 40;
+            this.textBox_LetterGrade.Visible = false;
             // 
             // textBox_Grade
             // 
@@ -169,9 +170,9 @@
             this.label4.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label4.Location = new System.Drawing.Point(58, 100);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 19);
+            this.label4.Size = new System.Drawing.Size(64, 19);
             this.label4.TabIndex = 38;
-            this.label4.Text = "Grade :";
+            this.label4.Text = "Score :";
             // 
             // textBox_stdId
             // 
@@ -187,11 +188,12 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label5.Location = new System.Drawing.Point(12, 131);
+            this.label5.Location = new System.Drawing.Point(57, 131);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(113, 19);
+            this.label5.Size = new System.Drawing.Size(65, 19);
             this.label5.TabIndex = 36;
-            this.label5.Text = "Letter Grade :";
+            this.label5.Text = "Grade :";
+            this.label5.Visible = false;
             // 
             // label2
             // 
