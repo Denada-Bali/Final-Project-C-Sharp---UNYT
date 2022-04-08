@@ -49,7 +49,7 @@ namespace Final_Project_C_Sharp___UNYT
 
         //add score
         private void button_add_Click(object sender, EventArgs e)
-        { 
+        {
             // this contition check if the student Id and student grade are empty
             if (textBox_stdId.Text == "" || textBox_Grade.Text == "")
             {
@@ -63,30 +63,106 @@ namespace Final_Project_C_Sharp___UNYT
                 double Grade = Convert.ToInt32(textBox_Grade.Text);
                 string LeGradec = textBox_LetterGrade.Text;
 
-                //this condition checks if the grade has not been previously introduced to this student
-                //by checking the student by ID and name
-                if (!score.checkScore(studentId, cName))
+                if (Grade >= 0 && Grade <= 100)
                 {
-                    //this condition check if the data is not empty
-                    if (score.insertScore(studentId, cName, Grade, LeGradec))
-                    {
-                        showScoe();
-                        button_clear.PerformClick();// The application automatically deletes the previously entered data
-                    //show a message that a new course has been inserted
-                        MessageBox.Show("New grade added", "Add Grade", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                    LeGradec = "F";
+
+                    if (Grade >= 96 && Grade <= 100)
+                    {
+                        //MessageBox.Show("A");
+                        LeGradec = "A";
                     }
-                    else
-                    {   //shows an error message
-                        MessageBox.Show("Grade not added", "Add Grade", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    else if (Grade >= 90 && Grade <= 95)
+                    {
+                        //MessageBox.Show("A-");
+                        LeGradec = "A-";
                     }
+                    else if (Grade >= 87 && Grade <= 89)
+                    {
+                        //MessageBox.Show("B+");
+                        LeGradec = "B+";
+                    }
+                    else if (Grade >= 83 && Grade <= 86)
+                    {
+                        //MessageBox.Show("B");
+                        LeGradec = "B";
+                    }
+                    else if (Grade >= 80 && Grade <= 82)
+                    {
+                        //MessageBox.Show("B-");
+                        LeGradec = "B-";
+                    }
+                    else if (Grade >= 77 && Grade <= 79)
+                    {
+                        //MessageBox.Show("C+");
+                        LeGradec = "C+";
+                    }
+                    else if (Grade >= 73 && Grade <= 76)
+                    {
+                        //MessageBox.Show("C");
+                        LeGradec = "C";
+                    }
+                    else if (Grade >= 70 && Grade <= 72)
+                    {
+                        //MessageBox.Show("C-");
+                        LeGradec = "C-";
+                    }
+                    else if (Grade >= 67 && Grade <= 69)
+                    {
+                        //MessageBox.Show("D+");
+                        LeGradec = "D+";
+                    }
+                    else if (Grade >= 63 && Grade <= 66)
+                    {
+                        //MessageBox.Show("D");
+                        LeGradec = "D";
+                    }
+                    else if (Grade >= 60 && Grade <= 62)
+                    {
+                        //MessageBox.Show("D-");
+                        LeGradec = "D-";
+                    }
+
+
+                    //this condition checks if the grade has not been previously introduced to this student
+                    //by checking the student by ID and name
+                    if (!score.checkScore(studentId, cName))
+                    {
+                        //this condition check if the data is not empty
+                        if (score.insertScore(studentId, cName, Grade, LeGradec))
+                        {
+                            showScoe();
+                            button_clear.PerformClick();// The application automatically deletes the previously entered data
+                                                        //show a message that a new course has been inserted
+                            MessageBox.Show("New grade added", "Add Grade", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        }
+                        else
+                        {   //shows an error message
+                            MessageBox.Show("Grade not added", "Add Grade", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+
+                    else //if the score exists the program indicates an error message
+                    {
+                        MessageBox.Show("The grade for this course are alerady exists", "Add Grade", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+
+                } 
+                else
+               {
+                MessageBox.Show("Invalid Input!", "Add Grade", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                 }
-                else //if the score exists the program indicates an error message
-                {
-                    MessageBox.Show("The grade for this course are alerady exists", "Add Grade", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+
             }
+           
+
         }
+         
+
+
 
         //this button shows in DataGridView the student data (ID, first name, and last name)
         //which are taken from the student database
