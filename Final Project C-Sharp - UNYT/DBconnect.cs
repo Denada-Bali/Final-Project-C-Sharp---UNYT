@@ -15,7 +15,7 @@ namespace Final_Project_C_Sharp___UNYT
     class DBconnect
     {
         //to create connection
-        MySqlConnection connect = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;database=studentdb");
+        MySqlConnection connect = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;database=studentdb; convert zero datetime=True");
 
         //to get connection
         public MySqlConnection getconnection

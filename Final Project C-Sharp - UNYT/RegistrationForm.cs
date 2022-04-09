@@ -46,8 +46,8 @@ namespace Final_Project_C_Sharp___UNYT
             DataGridView_student.ReadOnly = true;
             DataGridView_student.DataSource = student.getStudentlist(new MySqlCommand("SELECT * FROM `student`"));
             DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
-            // column 7 is the image column index
-            imageColumn = (DataGridViewImageColumn)DataGridView_student.Columns[7];
+            // column 8 is the image column index
+            imageColumn = (DataGridViewImageColumn)DataGridView_student.Columns[8];
             imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
         }
 
@@ -71,6 +71,7 @@ namespace Final_Project_C_Sharp___UNYT
             string phone = textBox_phone.Text;
             string address = textBox_address.Text;
             string gender = radioButton_male.Checked ? "Male" : "Female";
+            string program = fourth_year_program.Checked ? "4-Year" : "4-Year";
 
 
             //we need to check student age between 10 and 100
@@ -90,7 +91,7 @@ namespace Final_Project_C_Sharp___UNYT
                     MemoryStream ms = new MemoryStream();
                     pictureBox_student.Image.Save(ms, pictureBox_student.Image.RawFormat);
                     byte[] img = ms.ToArray();
-                    if (student.insertStudent(fname, lname, bdate, gender, phone, address, img))
+                    if (student.insertStudent(fname, lname, bdate, gender, phone, address, program, img))
                     {
                         showTable();  //show student list on datagridview 
                         //prints the message that a new student has been added
@@ -119,9 +120,42 @@ namespace Final_Project_C_Sharp___UNYT
             textBox_phone.Clear();
             textBox_address.Clear();
             radioButton_male.Checked = true;
+            fourth_year_program.Checked = true;
             dateTimePicker1.Value = DateTime.Now;
             pictureBox_student.Image = null;
         }
-       
+
+        private void DataGridView_student_DataError(object sender, DataGridViewDataErrorEventArgs anError)
+        {
+            //This event is used to avoid the error of DataGridview Error
+
+            MessageBox.Show("Error happened " + anError.Context.ToString());
+
+            if (anError.Context == DataGridViewDataErrorContexts.Commit)
+            {
+                MessageBox.Show("Commit error");
+            }
+            if (anError.Context == DataGridViewDataErrorContexts.CurrentCellChange)
+            {
+                MessageBox.Show("Cell change");
+            }
+            if (anError.Context == DataGridViewDataErrorContexts.Parsing)
+            {
+                MessageBox.Show("parsing error");
+            }
+            if (anError.Context == DataGridViewDataErrorContexts.LeaveControl)
+            {
+                MessageBox.Show("leave control error");
+            }
+
+            if ((anError.Exception) is ConstraintException)
+            {
+                DataGridView view = (DataGridView)sender;
+                view.Rows[anError.RowIndex].ErrorText = "an error";
+                view.Rows[anError.RowIndex].Cells[anError.ColumnIndex].ErrorText = "an error";
+
+                anError.ThrowException = false;
+            }
+        }
     }
 }

@@ -12,11 +12,11 @@ namespace Final_Project_C_Sharp___UNYT
     {
         DBconnect connect = new DBconnect();
         //create a function to add a new students to the database
-        public bool insertStudent(string fname, string lname, DateTime bdate, string gender, string phone, string address, byte[] img)
+        public bool insertStudent(string fname, string lname, DateTime bdate, string gender, string phone, string address, string program, byte[] img)
         {
             //mysql connection represent an open connection to my database
             //connection string is a string that specifies information about data source                                                                   //The VALUES command specifies the values of an INSERT INTO statement.
-            MySqlCommand command = new MySqlCommand("INSERT INTO `student`(`StdFirstName`, `StdLastName`, `Birthdate`, `Gender`, `Phone`, `Address`, `Photo`) VALUES(@fn, @ln, @bd, @gd, @ph, @adr, @img)", connect.getconnection);
+            MySqlCommand command = new MySqlCommand("INSERT INTO `student`(`StdFirstName`, `StdLastName`, `Birthdate`, `Gender`, `Phone`, `Address`, `Program`, `Photo`) VALUES(@fn, @ln, @bd, @gd, @ph, @adr,@prg, @img)", connect.getconnection);
 
             // add dates in my database server
             //@fn, @ln, @bd, @gd, @ph, @adr, @img
@@ -26,6 +26,7 @@ namespace Final_Project_C_Sharp___UNYT
             command.Parameters.Add("@gd", MySqlDbType.VarChar).Value = gender;
             command.Parameters.Add("@ph", MySqlDbType.VarChar).Value = phone;
             command.Parameters.Add("@adr", MySqlDbType.VarChar).Value = address;
+            command.Parameters.Add("@prg", MySqlDbType.VarChar).Value = program;
             command.Parameters.Add("@img", MySqlDbType.Blob).Value = img;
 
             connect.openConnect();// open the connection
@@ -62,21 +63,35 @@ namespace Final_Project_C_Sharp___UNYT
             connect.closeConnect();
             return count;
         }
+
         //to get the total student
         public string totalStudent()
         {
             return exeCount("SELECT COUNT(*) FROM student");
         }
+        
         // to get the male student count
         public string maleStudent()
         {
             return exeCount("SELECT COUNT(*) FROM student WHERE `Gender`='Male'");
         }
+        
         // to get the female student count
         public string femaleStudent()
         {
             return exeCount("SELECT COUNT(*) FROM student WHERE `Gender`='Female'");
         }
+
+        public string fourthYearProgram()
+        {
+            return exeCount("SELECT COUNT(*) FROM student WHERE `Program`='4-Year'");
+        }
+
+        public string threeYearProgram()
+        {
+            return exeCount("SELECT COUNT(*) FROM student WHERE `Program`='3-Year'");
+        }
+
         //create a function search for student (first name, last name, address)
         public DataTable searchStudent(string searchdata)
         {
@@ -86,10 +101,11 @@ namespace Final_Project_C_Sharp___UNYT
             adapter.Fill(table);
             return table;
         }
+        
         //create a function edit for student
-        public bool updateStudent(int id, string fname, string lname, DateTime bdate, string gender, string phone, string address, byte[] img)
+        public bool updateStudent(int id, string fname, string lname, DateTime bdate, string gender, string phone, string address, string program, byte[] img)
         {
-            MySqlCommand command = new MySqlCommand("UPDATE `student` SET `StdFirstName`=@fn,`StdLastName`=@ln,`Birthdate`=@bd,`Gender`=@gd,`Phone`=@ph,`Address`=@adr,`Photo`=@img WHERE  `StdId`= @id", connect.getconnection);
+            MySqlCommand command = new MySqlCommand("UPDATE `student` SET `StdFirstName`=@fn,`StdLastName`=@ln,`Birthdate`=@bd,`Gender`=@gd,`Phone`=@ph,`Address`=@adr,`Program`=@prg,`Photo`=@img WHERE  `StdId`= @id", connect.getconnection);
 
             //@id,@fn, @ln, @bd, @gd, @ph, @adr, @img
             command.Parameters.Add("@id", MySqlDbType.Int32).Value = id;
@@ -99,6 +115,7 @@ namespace Final_Project_C_Sharp___UNYT
             command.Parameters.Add("@gd", MySqlDbType.VarChar).Value = gender;
             command.Parameters.Add("@ph", MySqlDbType.VarChar).Value = phone;
             command.Parameters.Add("@adr", MySqlDbType.VarChar).Value = address;
+            command.Parameters.Add("@prg", MySqlDbType.VarChar).Value = program;
             command.Parameters.Add("@img", MySqlDbType.Blob).Value = img;
 
             connect.openConnect();
