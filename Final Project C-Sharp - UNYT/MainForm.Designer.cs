@@ -56,6 +56,7 @@
             this.panel_cover = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.aPrograms = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label_cfemale = new System.Windows.Forms.Label();
@@ -74,6 +75,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
+            this.threeYear = new System.Windows.Forms.Label();
+            this.fourthYear = new System.Windows.Forms.Label();
             this.panel_slide.SuspendLayout();
             this.panel_scoreSubmenu.SuspendLayout();
             this.panel_courseSubmenu.SuspendLayout();
@@ -504,6 +507,9 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panel3.Controls.Add(this.fourthYear);
+            this.panel3.Controls.Add(this.threeYear);
+            this.panel3.Controls.Add(this.aPrograms);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.label_cfemale);
@@ -517,6 +523,18 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(930, 125);
             this.panel3.TabIndex = 2;
+            // 
+            // aPrograms
+            // 
+            this.aPrograms.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.aPrograms.AutoSize = true;
+            this.aPrograms.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.aPrograms.ForeColor = System.Drawing.Color.White;
+            this.aPrograms.Location = new System.Drawing.Point(278, 39);
+            this.aPrograms.Name = "aPrograms";
+            this.aPrograms.Size = new System.Drawing.Size(104, 13);
+            this.aPrograms.TabIndex = 8;
+            this.aPrograms.Text = "Academic Programs:";
             // 
             // label6
             // 
@@ -718,6 +736,30 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "Unversity of New York Tirana ";
             // 
+            // threeYear
+            // 
+            this.threeYear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.threeYear.AutoSize = true;
+            this.threeYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.threeYear.ForeColor = System.Drawing.Color.White;
+            this.threeYear.Location = new System.Drawing.Point(278, 81);
+            this.threeYear.Name = "threeYear";
+            this.threeYear.Size = new System.Drawing.Size(44, 13);
+            this.threeYear.TabIndex = 9;
+            this.threeYear.Text = "3 Year :";
+            // 
+            // fourthYear
+            // 
+            this.fourthYear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.fourthYear.AutoSize = true;
+            this.fourthYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.fourthYear.ForeColor = System.Drawing.Color.White;
+            this.fourthYear.Location = new System.Drawing.Point(384, 81);
+            this.fourthYear.Name = "fourthYear";
+            this.fourthYear.Size = new System.Drawing.Size(44, 13);
+            this.fourthYear.TabIndex = 10;
+            this.fourthYear.Text = "4 Year :";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -800,5 +842,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label aPrograms;
+        private System.Windows.Forms.Label fourthYear;
+        private System.Windows.Forms.Label threeYear;
     }
 }

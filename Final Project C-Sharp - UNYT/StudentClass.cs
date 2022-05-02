@@ -69,7 +69,11 @@ namespace Final_Project_C_Sharp___UNYT
         {
             return exeCount("SELECT COUNT(*) FROM student");
         }
-        
+
+        public string totalPrograms()
+        {
+            return exeCount("SELECT COUNT(DISTINCT Program) FROM student");
+        }
         // to get the male student count
         public string maleStudent()
         {
@@ -84,12 +88,12 @@ namespace Final_Project_C_Sharp___UNYT
 
         public string fourthYearProgram()
         {
-            return exeCount("SELECT COUNT(*) FROM student WHERE `Program`='4-Year'");
+            return exeCount("SELECT COUNT(*) FROM student WHERE `Program`='4 Year'");
         }
 
         public string threeYearProgram()
         {
-            return exeCount("SELECT COUNT(*) FROM student WHERE `Program`='3-Year'");
+            return exeCount("SELECT COUNT(*) FROM student WHERE `Program`='3 Year'");
         }
 
         //create a function search for student (first name, last name, address)
