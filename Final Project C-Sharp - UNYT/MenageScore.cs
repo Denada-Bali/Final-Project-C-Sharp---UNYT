@@ -78,6 +78,20 @@ namespace Final_Project_C_Sharp___UNYT
                 double grade = Convert.ToInt32(textBox_Grade.Text);
                 string LeGrade = textBox_LetterGrade.Text;
 
+                //MySqlCommand comand = new MySqlCommand();
+                //comand.CommandText = "select Query";
+                //var result = comand.ExecuteReader();
+                //var myArray = new string[,] { };
+                //var counter = 0;
+
+                //while (result.Read())
+                //{
+                //    myArray[counter, 7] = (string)result["Program Column"];
+                    
+
+                //    counter++;
+                //}
+
                 if (grade >= 0 && grade <= 100)
                 {
 

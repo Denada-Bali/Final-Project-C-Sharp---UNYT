@@ -28,15 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button_search = new System.Windows.Forms.Button();
             this.DataGridView_student = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.fourth_year_program_print_rb = new System.Windows.Forms.RadioButton();
-            this.three_year_program_print_rb = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.radioButton_all = new System.Windows.Forms.RadioButton();
             this.radioButton_male = new System.Windows.Forms.RadioButton();
@@ -50,7 +47,6 @@
             this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_student)).BeginInit();
             this.panel2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -74,8 +70,8 @@
             // 
             this.DataGridView_student.AllowUserToAddRows = false;
             this.DataGridView_student.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.DataGridView_student.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.DataGridView_student.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.DataGridView_student.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -84,23 +80,23 @@
             this.DataGridView_student.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridView_student.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DataGridView_student.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridView_student.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridView_student.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.DataGridView_student.ColumnHeadersHeight = 24;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridView_student.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridView_student.DefaultCellStyle = dataGridViewCellStyle6;
             this.DataGridView_student.EnableHeadersVisualStyles = false;
             this.DataGridView_student.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DataGridView_student.Location = new System.Drawing.Point(0, 65);
@@ -135,7 +131,6 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.groupBox1);
             this.panel2.Controls.Add(this.groupBox2);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.btn_student_search);
@@ -149,47 +144,6 @@
             this.panel2.Size = new System.Drawing.Size(1134, 132);
             this.panel2.TabIndex = 32;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.fourth_year_program_print_rb);
-            this.groupBox1.Controls.Add(this.three_year_program_print_rb);
-            this.groupBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.groupBox1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.groupBox1.Location = new System.Drawing.Point(165, 16);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(377, 58);
-            this.groupBox1.TabIndex = 46;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Select Program:";
-            // 
-            // fourth_year_program_print_rb
-            // 
-            this.fourth_year_program_print_rb.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.fourth_year_program_print_rb.AutoSize = true;
-            this.fourth_year_program_print_rb.Checked = true;
-            this.fourth_year_program_print_rb.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.fourth_year_program_print_rb.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.fourth_year_program_print_rb.Location = new System.Drawing.Point(156, 0);
-            this.fourth_year_program_print_rb.Name = "fourth_year_program_print_rb";
-            this.fourth_year_program_print_rb.Size = new System.Drawing.Size(82, 23);
-            this.fourth_year_program_print_rb.TabIndex = 43;
-            this.fourth_year_program_print_rb.TabStop = true;
-            this.fourth_year_program_print_rb.Text = "4 - Year";
-            this.fourth_year_program_print_rb.UseVisualStyleBackColor = true;
-            // 
-            // three_year_program_print_rb
-            // 
-            this.three_year_program_print_rb.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.three_year_program_print_rb.AutoSize = true;
-            this.three_year_program_print_rb.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.three_year_program_print_rb.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.three_year_program_print_rb.Location = new System.Drawing.Point(156, 29);
-            this.three_year_program_print_rb.Name = "three_year_program_print_rb";
-            this.three_year_program_print_rb.Size = new System.Drawing.Size(82, 23);
-            this.three_year_program_print_rb.TabIndex = 44;
-            this.three_year_program_print_rb.Text = "3 - Year";
-            this.three_year_program_print_rb.UseVisualStyleBackColor = true;
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.radioButton_all);
@@ -197,9 +151,9 @@
             this.groupBox2.Controls.Add(this.radioButton_female);
             this.groupBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.groupBox2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.groupBox2.Location = new System.Drawing.Point(165, 74);
+            this.groupBox2.Location = new System.Drawing.Point(171, 35);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(377, 46);
+            this.groupBox2.Size = new System.Drawing.Size(378, 63);
             this.groupBox2.TabIndex = 45;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Select Gender:";
@@ -211,7 +165,7 @@
             this.radioButton_all.Checked = true;
             this.radioButton_all.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.radioButton_all.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.radioButton_all.Location = new System.Drawing.Point(46, 17);
+            this.radioButton_all.Location = new System.Drawing.Point(45, 25);
             this.radioButton_all.Name = "radioButton_all";
             this.radioButton_all.Size = new System.Drawing.Size(46, 23);
             this.radioButton_all.TabIndex = 24;
@@ -225,7 +179,7 @@
             this.radioButton_male.AutoSize = true;
             this.radioButton_male.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.radioButton_male.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.radioButton_male.Location = new System.Drawing.Point(156, 17);
+            this.radioButton_male.Location = new System.Drawing.Point(156, 25);
             this.radioButton_male.Name = "radioButton_male";
             this.radioButton_male.Size = new System.Drawing.Size(62, 23);
             this.radioButton_male.TabIndex = 23;
@@ -238,7 +192,7 @@
             this.radioButton_female.AutoSize = true;
             this.radioButton_female.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.radioButton_female.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.radioButton_female.Location = new System.Drawing.Point(274, 16);
+            this.radioButton_female.Location = new System.Drawing.Point(275, 25);
             this.radioButton_female.Name = "radioButton_female";
             this.radioButton_female.Size = new System.Drawing.Size(82, 23);
             this.radioButton_female.TabIndex = 24;
@@ -343,8 +297,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_student)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -367,9 +319,6 @@
         private System.Windows.Forms.Button btn_student_search;
         private System.Windows.Forms.TextBox txtB_search;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton three_year_program_print_rb;
-        private System.Windows.Forms.RadioButton fourth_year_program_print_rb;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
     }
 }

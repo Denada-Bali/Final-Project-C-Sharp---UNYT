@@ -155,10 +155,10 @@ namespace Final_Project_C_Sharp___UNYT
             this.fourth_year_program.ForeColor = System.Drawing.Color.MidnightBlue;
             this.fourth_year_program.Location = new System.Drawing.Point(112, -4);
             this.fourth_year_program.Name = "fourth_year_program";
-            this.fourth_year_program.Size = new System.Drawing.Size(82, 23);
+            this.fourth_year_program.Size = new System.Drawing.Size(77, 23);
             this.fourth_year_program.TabIndex = 36;
             this.fourth_year_program.TabStop = true;
-            this.fourth_year_program.Text = "4 - Year";
+            this.fourth_year_program.Text = "4  Year";
             this.fourth_year_program.UseVisualStyleBackColor = true;
             // 
             // three_year_program
@@ -169,9 +169,9 @@ namespace Final_Project_C_Sharp___UNYT
             this.three_year_program.ForeColor = System.Drawing.Color.MidnightBlue;
             this.three_year_program.Location = new System.Drawing.Point(112, 24);
             this.three_year_program.Name = "three_year_program";
-            this.three_year_program.Size = new System.Drawing.Size(82, 23);
+            this.three_year_program.Size = new System.Drawing.Size(77, 23);
             this.three_year_program.TabIndex = 37;
-            this.three_year_program.Text = "3 - Year";
+            this.three_year_program.Text = "3  Year";
             this.three_year_program.UseVisualStyleBackColor = true;
             // 
             // panel3

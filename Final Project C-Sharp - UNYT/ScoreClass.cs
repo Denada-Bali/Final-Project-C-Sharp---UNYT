@@ -24,7 +24,7 @@ namespace Final_Project_C_Sharp___UNYT
         command.Parameters.Add("@cn", MySqlDbType.VarChar).Value = courName;
         command.Parameters.Add("@gra", MySqlDbType.Double).Value = gra;
         command.Parameters.Add("@lgr", MySqlDbType.VarChar).Value = lgr;
-        connect.openConnect();// open the connection
+            connect.openConnect();// open the connection
           //returns the number of rows affected by the query we are executing.
             if (command.ExecuteNonQuery() == 1)
         {
@@ -58,6 +58,16 @@ namespace Final_Project_C_Sharp___UNYT
         else
         { return false; }
     }
+
+        public bool checkProgram(int stdId, string programY)
+        {
+            DataTable table = getList(new MySqlCommand("SELECT * FROM `score` WHERE `StudentId`= '" + stdId + "' AND `Program`= '" + programY));
+            if (table.Rows.Count > 0)
+            { return true; }
+            else
+            { return false; }
+
+        }
     // Create A function to edit grade data
     public bool updateScore(int stdid, string scn, double grade, string LeGrade)
     {

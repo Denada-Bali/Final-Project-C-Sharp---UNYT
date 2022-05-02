@@ -34,7 +34,7 @@ namespace Final_Project_C_Sharp___UNYT
             DataGridView_student.ReadOnly = true;
             DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
             DataGridView_student.DataSource = student.getList(command);
-            // column 9 is the image column index
+            // column 8 is the image column index
             imageColumn = (DataGridViewImageColumn)DataGridView_student.Columns[8];
             imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
         }
@@ -42,18 +42,39 @@ namespace Final_Project_C_Sharp___UNYT
         {
             //check the radio button
             string selectQuery;
+
             if (radioButton_all.Checked)
             {
                 selectQuery = "SELECT* FROM `student`";
             }
+
             else if (radioButton_male.Checked)
             {
                 selectQuery = "SELECT * FROM `student` WHERE `Gender`='Male'";
+
+                //if (fourth_year_program_print_rb.Checked)
+                //{
+                //    selectQuery = "SELECT * FROM `student` WHERE `Program`= '4-Year'";
+                //}
+
+                //else if (three_year_program_print_rb.Checked)
+                //{
+                //    selectQuery = "SELECT * FROM `student` WHERE `Program`= '3-Year'";
+                //}
             }
             else
             {
                 selectQuery = "SELECT * FROM `student` WHERE `Gender`='Female'";
-            }
+
+                //if (fourth_year_program_print_rb.Checked)
+                //{
+                //    selectQuery = "SELECT * FROM `student` WHERE `Program`= '4-Year'";
+                //}
+                //else if (three_year_program_print_rb.Checked)
+                //{
+                //    selectQuery = "SELECT * FROM `student` WHERE `Program`= '3-Year'";
+                //}
+            }  
             showData(new MySqlCommand(selectQuery));
         }
 
@@ -79,6 +100,7 @@ namespace Final_Project_C_Sharp___UNYT
             DataGridView_student.DataSource = student.searchStudent(txtB_search.Text);
             txtB_search.Clear();
         }
+
         private void DataGridView_student_DataError(object sender, DataGridViewDataErrorEventArgs anError)
         {
             //This event is used to avoid the error of DataGridview Error

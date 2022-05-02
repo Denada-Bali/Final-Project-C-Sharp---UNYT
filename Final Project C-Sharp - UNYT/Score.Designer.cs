@@ -35,9 +35,10 @@
             this.button_sScore = new System.Windows.Forms.Button();
             this.button_sStudent = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.fourth_year_program_score_rb = new System.Windows.Forms.RadioButton();
             this.three_year_program_score_rb = new System.Windows.Forms.RadioButton();
             this.button_clear = new System.Windows.Forms.Button();
-            this.fourth_year_program_score_rb = new System.Windows.Forms.RadioButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.comboBox_course = new System.Windows.Forms.ComboBox();
             this.button_add = new System.Windows.Forms.Button();
@@ -49,11 +50,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.DataGridView_student = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridView_student)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView_student)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -118,6 +118,35 @@
             this.panel2.Size = new System.Drawing.Size(1134, 177);
             this.panel2.TabIndex = 23;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.fourth_year_program_score_rb);
+            this.groupBox1.Controls.Add(this.three_year_program_score_rb);
+            this.groupBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.groupBox1.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.groupBox1.Location = new System.Drawing.Point(316, 80);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(353, 58);
+            this.groupBox1.TabIndex = 53;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Select Program :";
+            this.groupBox1.Visible = false;
+            // 
+            // fourth_year_program_score_rb
+            // 
+            this.fourth_year_program_score_rb.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.fourth_year_program_score_rb.AutoSize = true;
+            this.fourth_year_program_score_rb.Checked = true;
+            this.fourth_year_program_score_rb.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.fourth_year_program_score_rb.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.fourth_year_program_score_rb.Location = new System.Drawing.Point(174, -2);
+            this.fourth_year_program_score_rb.Name = "fourth_year_program_score_rb";
+            this.fourth_year_program_score_rb.Size = new System.Drawing.Size(82, 23);
+            this.fourth_year_program_score_rb.TabIndex = 46;
+            this.fourth_year_program_score_rb.TabStop = true;
+            this.fourth_year_program_score_rb.Text = "4 - Year";
+            this.fourth_year_program_score_rb.UseVisualStyleBackColor = true;
+            // 
             // three_year_program_score_rb
             // 
             this.three_year_program_score_rb.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -145,21 +174,6 @@
             this.button_clear.Text = "Clear";
             this.button_clear.UseVisualStyleBackColor = false;
             this.button_clear.Click += new System.EventHandler(this.button_clear_Click_1);
-            // 
-            // fourth_year_program_score_rb
-            // 
-            this.fourth_year_program_score_rb.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.fourth_year_program_score_rb.AutoSize = true;
-            this.fourth_year_program_score_rb.Checked = true;
-            this.fourth_year_program_score_rb.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.fourth_year_program_score_rb.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.fourth_year_program_score_rb.Location = new System.Drawing.Point(174, -2);
-            this.fourth_year_program_score_rb.Name = "fourth_year_program_score_rb";
-            this.fourth_year_program_score_rb.Size = new System.Drawing.Size(82, 23);
-            this.fourth_year_program_score_rb.TabIndex = 46;
-            this.fourth_year_program_score_rb.TabStop = true;
-            this.fourth_year_program_score_rb.Text = "4 - Year";
-            this.fourth_year_program_score_rb.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
@@ -202,7 +216,6 @@
             this.textBox_LetterGrade.Name = "textBox_LetterGrade";
             this.textBox_LetterGrade.Size = new System.Drawing.Size(135, 19);
             this.textBox_LetterGrade.TabIndex = 25;
-            this.textBox_LetterGrade.Visible = false;
             // 
             // textBox_Grade
             // 
@@ -331,19 +344,6 @@
             this.DataGridView_student.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DataGridView_student.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.fourth_year_program_score_rb);
-            this.groupBox1.Controls.Add(this.three_year_program_score_rb);
-            this.groupBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.groupBox1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.groupBox1.Location = new System.Drawing.Point(316, 80);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(353, 58);
-            this.groupBox1.TabIndex = 53;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Select Program :";
-            // 
             // Score
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -353,14 +353,15 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "Score";
-            this.Text = "7";
+            this.Tag = "";
+            this.Text = "Score Interface";
             this.Load += new System.EventHandler(this.Score_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridView_student)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView_student)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -383,8 +384,8 @@
         private Guna.UI2.WinForms.Guna2DataGridView DataGridView_student;
         private System.Windows.Forms.TextBox textBox_LetterGrade;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.RadioButton three_year_program_score_rb;
-        private System.Windows.Forms.RadioButton fourth_year_program_score_rb;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton fourth_year_program_score_rb;
+        private System.Windows.Forms.RadioButton three_year_program_score_rb;
     }
 }

@@ -58,7 +58,7 @@ namespace Final_Project_C_Sharp___UNYT
             
             textBox_address.Text = DataGridView_student.CurrentRow.Cells[6].Value.ToString();
 
-            if (DataGridView_student.CurrentRow.Cells[7].Value.ToString() == "3-Year")
+            if (DataGridView_student.CurrentRow.Cells[7].Value.ToString() == "4 Year")
                 fourth_year_program_rb.Checked = true;
 
             byte[] img = (byte[])DataGridView_student.CurrentRow.Cells[8].Value;
@@ -119,7 +119,7 @@ namespace Final_Project_C_Sharp___UNYT
             string phone = textBox_phone.Text;
             string address = textBox_address.Text;
             string gender = radioButton_male.Checked ? "Male" : "Female";
-            string program = fourth_year_program_rb.Checked ? "4-Year" : "3-Year";
+            string program = fourth_year_program_rb.Checked ? "4 Year" : "3 Year";
 
 
             //we need to check student age between 10 and 100
@@ -212,38 +212,7 @@ namespace Final_Project_C_Sharp___UNYT
             }
         }
 
-        private void DataGridView_student_DataError_1(object sender, DataGridViewDataErrorEventArgs anError)
-        {
-            //This event is used to avoid the error of DataGridview Error
-
-            MessageBox.Show("Error happened " + anError.Context.ToString());
-
-            if (anError.Context == DataGridViewDataErrorContexts.Commit)
-            {
-                MessageBox.Show("Commit error");
-            }
-            if (anError.Context == DataGridViewDataErrorContexts.CurrentCellChange)
-            {
-                MessageBox.Show("Cell change");
-            }
-            if (anError.Context == DataGridViewDataErrorContexts.Parsing)
-            {
-                MessageBox.Show("parsing error");
-            }
-            if (anError.Context == DataGridViewDataErrorContexts.LeaveControl)
-            {
-                MessageBox.Show("leave control error");
-            }
-
-            if ((anError.Exception) is ConstraintException)
-            {
-                DataGridView view = (DataGridView)sender;
-                view.Rows[anError.RowIndex].ErrorText = "an error";
-                view.Rows[anError.RowIndex].Cells[anError.ColumnIndex].ErrorText = "an error";
-
-                anError.ThrowException = false;
-            }
-        }
+  
     }
 }
 

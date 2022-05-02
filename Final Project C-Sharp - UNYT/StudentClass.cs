@@ -95,7 +95,7 @@ namespace Final_Project_C_Sharp___UNYT
         //create a function search for student (first name, last name, address)
         public DataTable searchStudent(string searchdata)
         {
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `student` WHERE CONCAT(`StdFirstName`,`StdLastName`,`Address`) LIKE '%" + searchdata + "%'", connect.getconnection);
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `student` WHERE CONCAT(`StdFirstName`,`StdLastName`,`Address`,`Program`) LIKE '%" + searchdata + "%'", connect.getconnection);
             MySqlDataAdapter adapter = new MySqlDataAdapter(command);
             DataTable table = new DataTable();
             adapter.Fill(table);

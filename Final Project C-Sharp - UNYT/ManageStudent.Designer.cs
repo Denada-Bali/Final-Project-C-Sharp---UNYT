@@ -147,8 +147,7 @@ namespace Final_Project_C_Sharp___UNYT
             this.DataGridView_student.ThemeStyle.RowsStyle.Height = 80;
             this.DataGridView_student.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DataGridView_student.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.DataGridView_student.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.DataGridView_student_DataError_1);
-            // 
+           // 
             // txtB_search
             // 
             this.txtB_search.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -210,9 +209,9 @@ namespace Final_Project_C_Sharp___UNYT
             this.three_year_program_rb.ForeColor = System.Drawing.Color.MidnightBlue;
             this.three_year_program_rb.Location = new System.Drawing.Point(108, 31);
             this.three_year_program_rb.Name = "three_year_program_rb";
-            this.three_year_program_rb.Size = new System.Drawing.Size(82, 23);
+            this.three_year_program_rb.Size = new System.Drawing.Size(77, 23);
             this.three_year_program_rb.TabIndex = 41;
-            this.three_year_program_rb.Text = "3 - Year";
+            this.three_year_program_rb.Text = "3  Year";
             this.three_year_program_rb.UseVisualStyleBackColor = true;
             // 
             // fourth_year_program_rb
@@ -224,10 +223,10 @@ namespace Final_Project_C_Sharp___UNYT
             this.fourth_year_program_rb.ForeColor = System.Drawing.Color.MidnightBlue;
             this.fourth_year_program_rb.Location = new System.Drawing.Point(108, 0);
             this.fourth_year_program_rb.Name = "fourth_year_program_rb";
-            this.fourth_year_program_rb.Size = new System.Drawing.Size(82, 23);
+            this.fourth_year_program_rb.Size = new System.Drawing.Size(77, 23);
             this.fourth_year_program_rb.TabIndex = 40;
             this.fourth_year_program_rb.TabStop = true;
-            this.fourth_year_program_rb.Text = "4 - Year";
+            this.fourth_year_program_rb.Text = "4  Year";
             this.fourth_year_program_rb.UseVisualStyleBackColor = true;
             // 
             // groupBox2

@@ -71,7 +71,7 @@ namespace Final_Project_C_Sharp___UNYT
             string phone = textBox_phone.Text;
             string address = textBox_address.Text;
             string gender = radioButton_male.Checked ? "Male" : "Female";
-            string program = fourth_year_program.Checked ? "4-Year" : "4-Year";
+            string program = fourth_year_program.Checked ? "4 Year" : "3 Year";
 
 
             //we need to check student age between 10 and 100
