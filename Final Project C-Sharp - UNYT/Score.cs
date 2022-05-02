@@ -197,52 +197,52 @@ namespace Final_Project_C_Sharp___UNYT
 
                 if (Grade >= 90 && Grade <= 100)
                 {
-                    MessageBox.Show("A");
+                    //MessageBox.Show("A");
                     LeGradec = "A";
                 }
                 else if (Grade >= 85 && Grade <= 89)
                 {
-                    MessageBox.Show("A-");
+                    //MessageBox.Show("A-");
                     LeGradec = "A-";
                 }
                 else if (Grade >= 80 && Grade <= 84)
                 {
-                    MessageBox.Show("B+");
+                    //MessageBox.Show("B+");
                     LeGradec = "B+";
                 }
                 else if (Grade >= 70 && Grade <= 79)
                 {
-                    MessageBox.Show("B");
+                    //MessageBox.Show("B");
                     LeGradec = "B";
                 }
                 else if (Grade >= 65 && Grade <= 69)
                 {
-                    MessageBox.Show("B-");
+                    //MessageBox.Show("B-");
                     LeGradec = "B-";
                 }
                 else if (Grade >= 60 && Grade <= 64)
                 {
-                    MessageBox.Show("C+");
+                    //MessageBox.Show("C+");
                     LeGradec = "C+";
                 }
                 else if (Grade >= 50 && Grade <= 59)
                 {
-                    MessageBox.Show("C");
+                    //MessageBox.Show("C");
                     LeGradec = "C";
                 }
                 else if (Grade >= 45 && Grade <= 49)
                 {
-                    MessageBox.Show("C-");
+                    //MessageBox.Show("C-");
                     LeGradec = "C-";
                 }
                 else if (Grade >= 40 && Grade <= 44)
                 {
-                    MessageBox.Show("D+");
+                    //MessageBox.Show("D+");
                     LeGradec = "D+";
                 }
                 else if (Grade >= 35 && Grade <= 39)
                 {
-                    MessageBox.Show("D");
+                    //MessageBox.Show("D");
                     LeGradec = "D";
                 }
 

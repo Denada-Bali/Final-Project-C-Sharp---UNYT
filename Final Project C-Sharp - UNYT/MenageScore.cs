@@ -56,7 +56,7 @@ namespace Final_Project_C_Sharp___UNYT
         //this button checks for the student, with the course name, student name, and surname
         private void button_search_Click(object sender, EventArgs e)
         {
-            DataGridView_score.DataSource = score.getList(new MySqlCommand("SELECT score.StudentId, student.StdFirstName, student.StdLastName, score.CourseName, score.Grade, score.LetterGrade FROM student INNER JOIN score ON score.StudentId = student.StdId WHERE CONCAT(student.StdFirstName, student.StdLastName, score.CourseName)LIKE '%" + textBox_search.Text + "%'"));
+            DataGridView_score.DataSource = score.getList(new MySqlCommand("SELECT score.StudentId, student.StdFirstName, student.StdLastName, score.CourseName, score.Score, score.Grade FROM student INNER JOIN score ON score.StudentId = student.StdId WHERE CONCAT(student.StdFirstName, student.StdLastName, score.CourseName)LIKE '%" + textBox_search.Text + "%'"));
 
         }
         // delete the above fields (student ID, grade, course, Letter Grade, search button)
