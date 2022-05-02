@@ -13,6 +13,11 @@ namespace Final_Project_C_Sharp___UNYT
 {
     public partial class MenageScore : Form
     {
+        public int stdId;
+        public string cName, LeGrade;
+        public double grade;
+
+
         CourseClass course = new CourseClass();
         ScoreClass score = new ScoreClass();
         public MenageScore()
@@ -73,111 +78,184 @@ namespace Final_Project_C_Sharp___UNYT
             }
             else //this condition check if the data is not empty
             {
-                int stdId = Convert.ToInt32(textBox_stdId.Text);
-                string cName = comboBox_course.Text;
-                double grade = Convert.ToInt32(textBox_Grade.Text);
-                string LeGrade = textBox_LetterGrade.Text;
+                 stdId = Convert.ToInt32(textBox_stdId.Text);
+                 cName = comboBox_course.Text;
+                 grade = Convert.ToInt32(textBox_Grade.Text);
+                 LeGrade = textBox_LetterGrade.Text;
 
-                //MySqlCommand comand = new MySqlCommand();
-                //comand.CommandText = "select Query";
-                //var result = comand.ExecuteReader();
-                //var myArray = new string[,] { };
-                //var counter = 0;
 
-                //while (result.Read())
-                //{
-                //    myArray[counter, 7] = (string)result["Program Column"];
-                    
+                string cs = "datasource=localhost;port=3306;username=root;password=;database=studentdb; convert zero datetime=True";
 
-                //    counter++;
-                //}
+                var con = new MySqlConnection(cs);
+                con.Open();
 
-                if (grade >= 0 && grade <= 100)
+                string sql = "SELECT `Program` FROM `student` WHERE `Stdid`=" + stdId;
+
+                var cmd = new MySqlCommand(sql, con);
+
+                MySqlDataReader rdr = cmd.ExecuteReader();
+
+
+                if (rdr.Read())
                 {
-
-                    LeGrade = "F";
-
-                    if (grade >= 96 && grade <= 100)
+                    if (rdr.GetValue(0).ToString().Equals("4 Year"))
                     {
-                        //MessageBox.Show("A");
-                        LeGrade = "A";
-                    }
-                    else if (grade >= 90 && grade <= 95)
-                    {
-                        //MessageBox.Show("A-");
-                        LeGrade = "A-";
-                    }
-                    else if (grade >= 87 && grade <= 89)
-                    {
-                        //MessageBox.Show("B+");
-                        LeGrade = "B+";
-                    }
-                    else if (grade >= 83 && grade <= 86)
-                    {
-                        //MessageBox.Show("B");
-                        LeGrade = "B";
-                    }
-                    else if (grade >= 80 && grade <= 82)
-                    {
-                        //MessageBox.Show("B-");
-                        LeGrade = "B-";
-                    }
-                    else if (grade >= 77 && grade <= 79)
-                    {
-                        //MessageBox.Show("C+");
-                        LeGrade = "C+";
-                    }
-                    else if (grade >= 73 && grade <= 76)
-                    {
-                        //MessageBox.Show("C");
-                        LeGrade = "C";
-                    }
-                    else if (grade >= 70 && grade <= 72)
-                    {
-                        //MessageBox.Show("C-");
-                        LeGrade = "C-";
-                    }
-                    else if (grade >= 67 && grade <= 69)
-                    {
-                        //MessageBox.Show("D+");
-                        LeGrade = "D+";
-                    }
-                    else if (grade >= 63 && grade <= 66)
-                    {
-                        //MessageBox.Show("D");
-                        LeGrade = "D";
-                    }
-                    else if (grade >= 60 && grade <= 62)
-                    {
-                        //MessageBox.Show("D-");
-                        LeGrade = "D-";
-                    }
-
-
-                    //this condition enters the data (ID, Name, Grade, Letter Grade)
-                    if (score.updateScore(stdId, cName, grade, LeGrade))
-                    {
-                        showScore();  //show score list on datagridview 
-                        button_clear.PerformClick(); //The application automatically deletes the previously entered data
-                                                     //show a message that a new course has been edited
-                        MessageBox.Show("Grade Edited Complete", "Update Grade", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                        textBox_LetterGrade.Text = rdr.GetValue(0).ToString();
+                        fourthYearSystem(grade);
                     }
                     else
                     {
-                        //shows an error message if the data are not edited
-                        MessageBox.Show("Grade not edit", "Update Grade", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        textBox_LetterGrade.Text = rdr.GetValue(0).ToString();
+                        threeYearSystem(grade);
                     }
 
+                }
+
+                //this condition enters the data (ID, Name, Grade, Letter Grade)
+                if (score.updateScore(stdId, cName, grade, LeGrade))
+                {
+                    showScore();  //show score list on datagridview 
+                    button_clear.PerformClick(); //The application automatically deletes the previously entered data
+                                                 //show a message that a new course has been edited
+                    MessageBox.Show("Grade Edited Complete", "Update Grade", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
                 else
                 {
-                    MessageBox.Show("Invalid Input!", "Add Grade", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
+                    //shows an error message if the data are not edited
+                    MessageBox.Show("Grade not edit", "Update Grade", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+
+
+            }
+         
+        }
+
+
+        private void fourthYearSystem(double Grade)
+        {
+
+            MessageBox.Show("The student is enrolled in the 4-year program.", "Message Box", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            LeGrade = "F";
+
+            if (Grade >= 96 && Grade <= 100)
+            {
+                //MessageBox.Show("A");
+                LeGrade = "A";
+            }
+            else if (Grade >= 90 && Grade <= 95)
+            {
+                //MessageBox.Show("A-");
+                LeGrade = "A-";
+            }
+            else if (Grade >= 87 && Grade <= 89)
+            {
+                //MessageBox.Show("B+");
+                LeGrade = "B+";
+            }
+            else if (Grade >= 83 && Grade <= 86)
+            {
+                //MessageBox.Show("B");
+                LeGrade = "B";
+            }
+            else if (Grade >= 80 && Grade <= 82)
+            {
+                //MessageBox.Show("B-");
+                LeGrade = "B-";
+            }
+            else if (Grade >= 77 && Grade <= 79)
+            {
+                //MessageBox.Show("C+");
+                LeGrade = "C+";
+            }
+            else if (Grade >= 73 && Grade <= 76)
+            {
+                //MessageBox.Show("C");
+                LeGrade = "C";
+            }
+            else if (Grade >= 70 && Grade <= 72)
+            {
+                //MessageBox.Show("C-");
+                LeGrade = "C-";
+            }
+            else if (Grade >= 67 && Grade <= 69)
+            {
+                //MessageBox.Show("D+");
+                LeGrade = "D+";
+            }
+            else if (Grade >= 63 && Grade <= 66)
+            {
+                //MessageBox.Show("D");
+                LeGrade = "D";
+            }
+            else if (Grade >= 60 && Grade <= 62)
+            {
+                //MessageBox.Show("D-");
+                LeGrade = "D-";
             }
         }
+
+        private void threeYearSystem(double Grade)
+        {
+            MessageBox.Show("The student is enrolled in the 3-year program.", "Message Box", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            LeGrade = "F";
+
+            if (Grade >= 90 && Grade <= 100)
+            {
+                MessageBox.Show("A");
+                LeGrade = "A";
+            }
+            else if (Grade >= 85 && Grade <= 89)
+            {
+                MessageBox.Show("A-");
+                LeGrade = "A-";
+            }
+            else if (Grade >= 80 && Grade <= 84)
+            {
+                MessageBox.Show("B+");
+                LeGrade = "B+";
+            }
+            else if (Grade >= 70 && Grade <= 79)
+            {
+                MessageBox.Show("B");
+                LeGrade = "B";
+            }
+            else if (Grade >= 65 && Grade <= 69)
+            {
+                MessageBox.Show("B-");
+                LeGrade = "B-";
+            }
+            else if (Grade >= 60 && Grade <= 64)
+            {
+                MessageBox.Show("C+");
+                LeGrade = "C+";
+            }
+            else if (Grade >= 50 && Grade <= 59)
+            {
+                MessageBox.Show("C");
+                LeGrade = "C";
+            }
+            else if (Grade >= 45 && Grade <= 49)
+            {
+                MessageBox.Show("C-");
+                LeGrade = "C-";
+            }
+            else if (Grade >= 40 && Grade <= 44)
+            {
+                MessageBox.Show("D+");
+                LeGrade = "D+";
+            }
+            else if (Grade >= 35 && Grade <= 39)
+            {
+                MessageBox.Show("D");
+                LeGrade = "D";
+            }
+
+
+        }
+
         //deletes the score from the ID
         private void button_delete_Click(object sender, EventArgs e)
         {

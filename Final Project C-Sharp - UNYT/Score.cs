@@ -78,7 +78,6 @@ namespace Final_Project_C_Sharp___UNYT
                 var con = new MySqlConnection(cs);
                 con.Open();
 
-                // string sql = "SELECT score.StudentId,student.Program FROM student INNER JOIN score ON score.StudentId=student.StdId";
                 string sql = "SELECT `Program` FROM `student` WHERE `Stdid`=" + studentId;
 
                 var cmd = new MySqlCommand(sql, con);

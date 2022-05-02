@@ -17,7 +17,7 @@ namespace Final_Project_C_Sharp___UNYT
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new SplashScrean());
-            Application.Run(new Score());
+            Application.Run(new SplashScrean());
         }
     }
 }

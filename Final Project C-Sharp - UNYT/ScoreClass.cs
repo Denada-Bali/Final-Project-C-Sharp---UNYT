@@ -71,14 +71,16 @@ namespace Final_Project_C_Sharp___UNYT
     // Create A function to edit grade data
     public bool updateScore(int stdid, string scn, double grade, string LeGrade)
     {
-        MySqlCommand command = new MySqlCommand("UPDATE `score` SET `Grade`=@gra,`LetterGrade`=@lgr WHERE `StudentId`=@stid AND `CourseName`=@scn", connect.getconnection);
+        MySqlCommand command = new MySqlCommand("UPDATE `score` SET `Grade`=@gra,`Grade`=@lgr WHERE `StudentId`=@stid AND `CourseName`=@scn", connect.getconnection);
         //@stid,@sco,@desc
         command.Parameters.Add("@scn", MySqlDbType.VarChar).Value = scn;
         command.Parameters.Add("@stid", MySqlDbType.Int32).Value = stdid;
         command.Parameters.Add("@gra", MySqlDbType.Double).Value = grade;
         command.Parameters.Add("@lgr", MySqlDbType.VarChar).Value = LeGrade;
+
         connect.openConnect();
-        if (command.ExecuteNonQuery() == 1)
+        
+            if (command.ExecuteNonQuery() == 1)
         {
             connect.closeConnect();
             return true;

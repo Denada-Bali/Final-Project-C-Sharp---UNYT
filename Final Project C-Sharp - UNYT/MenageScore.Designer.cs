@@ -28,15 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.textBox_search = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.three_year_program_Uscore_rb = new System.Windows.Forms.RadioButton();
-            this.fourth_year_program_Uscore_rb = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox_course = new System.Windows.Forms.ComboBox();
             this.button_search = new System.Windows.Forms.Button();
@@ -52,11 +50,9 @@
             this.button_clear = new System.Windows.Forms.Button();
             this.button_Update = new System.Windows.Forms.Button();
             this.DataGridView_score = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_score)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox_search
@@ -92,7 +88,6 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.groupBox1);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.textBox_search);
             this.panel2.Controls.Add(this.comboBox_course);
@@ -113,34 +108,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1184, 198);
             this.panel2.TabIndex = 43;
-            // 
-            // three_year_program_Uscore_rb
-            // 
-            this.three_year_program_Uscore_rb.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.three_year_program_Uscore_rb.AutoSize = true;
-            this.three_year_program_Uscore_rb.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.three_year_program_Uscore_rb.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.three_year_program_Uscore_rb.Location = new System.Drawing.Point(181, 25);
-            this.three_year_program_Uscore_rb.Name = "three_year_program_Uscore_rb";
-            this.three_year_program_Uscore_rb.Size = new System.Drawing.Size(82, 23);
-            this.three_year_program_Uscore_rb.TabIndex = 50;
-            this.three_year_program_Uscore_rb.Text = "3 - Year";
-            this.three_year_program_Uscore_rb.UseVisualStyleBackColor = true;
-            // 
-            // fourth_year_program_Uscore_rb
-            // 
-            this.fourth_year_program_Uscore_rb.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.fourth_year_program_Uscore_rb.AutoSize = true;
-            this.fourth_year_program_Uscore_rb.Checked = true;
-            this.fourth_year_program_Uscore_rb.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.fourth_year_program_Uscore_rb.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.fourth_year_program_Uscore_rb.Location = new System.Drawing.Point(181, -1);
-            this.fourth_year_program_Uscore_rb.Name = "fourth_year_program_Uscore_rb";
-            this.fourth_year_program_Uscore_rb.Size = new System.Drawing.Size(82, 23);
-            this.fourth_year_program_Uscore_rb.TabIndex = 49;
-            this.fourth_year_program_Uscore_rb.TabStop = true;
-            this.fourth_year_program_Uscore_rb.Text = "4 - Year";
-            this.fourth_year_program_Uscore_rb.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -185,7 +152,6 @@
             this.textBox_LetterGrade.Name = "textBox_LetterGrade";
             this.textBox_LetterGrade.Size = new System.Drawing.Size(135, 17);
             this.textBox_LetterGrade.TabIndex = 40;
-            this.textBox_LetterGrade.Visible = false;
             // 
             // textBox_Grade
             // 
@@ -311,8 +277,8 @@
             // 
             this.DataGridView_score.AllowUserToAddRows = false;
             this.DataGridView_score.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.DataGridView_score.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.DataGridView_score.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.DataGridView_score.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -321,23 +287,23 @@
             this.DataGridView_score.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridView_score.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DataGridView_score.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridView_score.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridView_score.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.DataGridView_score.ColumnHeadersHeight = 24;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridView_score.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridView_score.DefaultCellStyle = dataGridViewCellStyle6;
             this.DataGridView_score.EnableHeadersVisualStyles = false;
             this.DataGridView_score.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DataGridView_score.Location = new System.Drawing.Point(3, 50);
@@ -369,19 +335,6 @@
             this.DataGridView_score.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DataGridView_score.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.fourth_year_program_Uscore_rb);
-            this.groupBox1.Controls.Add(this.three_year_program_Uscore_rb);
-            this.groupBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.groupBox1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.groupBox1.Location = new System.Drawing.Point(287, 93);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(363, 57);
-            this.groupBox1.TabIndex = 52;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Select Program :";
-            // 
             // MenageScore
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -398,8 +351,6 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_score)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -425,8 +376,5 @@
         private System.Windows.Forms.Button button_Update;
         private Guna.UI2.WinForms.Guna2DataGridView DataGridView_score;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RadioButton three_year_program_Uscore_rb;
-        private System.Windows.Forms.RadioButton fourth_year_program_Uscore_rb;
-        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
