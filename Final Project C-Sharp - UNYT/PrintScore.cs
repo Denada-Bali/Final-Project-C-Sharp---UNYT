@@ -30,13 +30,13 @@ namespace Final_Project_C_Sharp___UNYT
         public void showScore()
         {
             DataGridView_score.ReadOnly = true;
-            DataGridView_score.DataSource = score.getList(new MySqlCommand("SELECT score.StudentId,student.StdFirstName,student.StdLastName,score.CourseName,score.Score,score.Grade FROM student INNER JOIN score ON score.StudentId=student.StdId"));
+            DataGridView_score.DataSource = score.getList(new MySqlCommand("SELECT score.StudentId,student.StdFirstName,student.StdLastName,score.CourseName,score.Score,score.Grade, student.Program FROM student INNER JOIN score ON score.StudentId=student.StdId"));
         }
 
         //search the student, and his / her details will  displayed in DataGridView
         private void button_search_Click_1(object sender, EventArgs e)
         {
-            DataGridView_score.DataSource = score.getList(new MySqlCommand("SELECT score.StudentId, student.StdFirstName, student.StdLastName, score.CourseName, score.Score, score.Grade FROM student INNER JOIN score ON score.StudentId = student.StdId WHERE CONCAT(student.StdFirstName, student.StdLastName, score.CourseName)LIKE '%" + textBox_search.Text + "%'"));
+            DataGridView_score.DataSource = score.getList(new MySqlCommand("SELECT score.StudentId, student.StdFirstName, student.StdLastName, score.CourseName, score.Score, score.Grade, student.Program FROM student INNER JOIN score ON score.StudentId = student.StdId WHERE CONCAT(student.StdFirstName, student.StdLastName, score.CourseName, student.Program)LIKE '%" + textBox_search.Text + "%'"));
         }
 
         private void button_print_Click(object sender, EventArgs e)
