@@ -167,8 +167,9 @@
             this.textBox_LetterGrade.Location = new System.Drawing.Point(153, 119);
             this.textBox_LetterGrade.Multiline = true;
             this.textBox_LetterGrade.Name = "textBox_LetterGrade";
-            this.textBox_LetterGrade.Size = new System.Drawing.Size(486, 46);
+            this.textBox_LetterGrade.Size = new System.Drawing.Size(135, 19);
             this.textBox_LetterGrade.TabIndex = 25;
+            this.textBox_LetterGrade.Visible = false;
             // 
             // textBox_Grade
             // 
@@ -186,9 +187,9 @@
             this.label4.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label4.Location = new System.Drawing.Point(80, 87);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 19);
+            this.label4.Size = new System.Drawing.Size(64, 19);
             this.label4.TabIndex = 20;
-            this.label4.Text = "Grade :";
+            this.label4.Text = "Score :";
             // 
             // textBox_stdId
             // 
@@ -204,11 +205,12 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label5.Location = new System.Drawing.Point(32, 119);
+            this.label5.Location = new System.Drawing.Point(79, 119);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(113, 19);
+            this.label5.Size = new System.Drawing.Size(65, 19);
             this.label5.TabIndex = 16;
-            this.label5.Text = "Letter Grade :";
+            this.label5.Text = "Grade :";
+            this.label5.Visible = false;
             // 
             // label2
             // 
@@ -305,6 +307,8 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "Score";
+            this.Tag = "";
+            this.Text = "Score Interface";
             this.Load += new System.EventHandler(this.Score_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -324,13 +328,13 @@
         private System.Windows.Forms.ComboBox comboBox_course;
         private System.Windows.Forms.Button button_add;
         private System.Windows.Forms.Button button_clear;
-        private System.Windows.Forms.TextBox textBox_LetterGrade;
         private System.Windows.Forms.TextBox textBox_Grade;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox_stdId;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2DataGridView DataGridView_student;
+        private System.Windows.Forms.TextBox textBox_LetterGrade;
+        private System.Windows.Forms.Label label5;
     }
 }

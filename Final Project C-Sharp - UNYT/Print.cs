@@ -34,26 +34,47 @@ namespace Final_Project_C_Sharp___UNYT
             DataGridView_student.ReadOnly = true;
             DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
             DataGridView_student.DataSource = student.getList(command);
-            // column 7 is the image column index
-            imageColumn = (DataGridViewImageColumn)DataGridView_student.Columns[7];
+            // column 8 is the image column index
+            imageColumn = (DataGridViewImageColumn)DataGridView_student.Columns[8];
             imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
         }
         private void button_check_Click_1(object sender, EventArgs e)
         {
             //check the radio button
             string selectQuery;
+
             if (radioButton_all.Checked)
             {
                 selectQuery = "SELECT* FROM `student`";
             }
+
             else if (radioButton_male.Checked)
             {
                 selectQuery = "SELECT * FROM `student` WHERE `Gender`='Male'";
+
+                //if (fourth_year_program_print_rb.Checked)
+                //{
+                //    selectQuery = "SELECT * FROM `student` WHERE `Program`= '4-Year'";
+                //}
+
+                //else if (three_year_program_print_rb.Checked)
+                //{
+                //    selectQuery = "SELECT * FROM `student` WHERE `Program`= '3-Year'";
+                //}
             }
             else
             {
                 selectQuery = "SELECT * FROM `student` WHERE `Gender`='Female'";
-            }
+
+                //if (fourth_year_program_print_rb.Checked)
+                //{
+                //    selectQuery = "SELECT * FROM `student` WHERE `Program`= '4-Year'";
+                //}
+                //else if (three_year_program_print_rb.Checked)
+                //{
+                //    selectQuery = "SELECT * FROM `student` WHERE `Program`= '3-Year'";
+                //}
+            }  
             showData(new MySqlCommand(selectQuery));
         }
 
@@ -78,6 +99,73 @@ namespace Final_Project_C_Sharp___UNYT
             //To Search course and show on datagridview
             DataGridView_student.DataSource = student.searchStudent(txtB_search.Text);
             txtB_search.Clear();
+        }
+
+        private void DataGridView_student_DataError(object sender, DataGridViewDataErrorEventArgs anError)
+        {
+            //This event is used to avoid the error of DataGridview Error
+
+            MessageBox.Show("Error happened " + anError.Context.ToString());
+
+            if (anError.Context == DataGridViewDataErrorContexts.Commit)
+            {
+                MessageBox.Show("Commit error");
+            }
+            if (anError.Context == DataGridViewDataErrorContexts.CurrentCellChange)
+            {
+                MessageBox.Show("Cell change");
+            }
+            if (anError.Context == DataGridViewDataErrorContexts.Parsing)
+            {
+                MessageBox.Show("parsing error");
+            }
+            if (anError.Context == DataGridViewDataErrorContexts.LeaveControl)
+            {
+                MessageBox.Show("leave control error");
+            }
+
+            if ((anError.Exception) is ConstraintException)
+            {
+                DataGridView view = (DataGridView)sender;
+                view.Rows[anError.RowIndex].ErrorText = "an error";
+                view.Rows[anError.RowIndex].Cells[anError.ColumnIndex].ErrorText = "an error";
+
+                anError.ThrowException = false;
+            }
+        }
+
+        private void DataGridView_student_DataError_1(object sender, DataGridViewDataErrorEventArgs anError)
+        {
+                //This event is used to avoid the error of DataGridview Error
+
+                MessageBox.Show("Error happened " + anError.Context.ToString());
+
+                if (anError.Context == DataGridViewDataErrorContexts.Commit)
+                {
+                    MessageBox.Show("Commit error");
+                }
+                if (anError.Context == DataGridViewDataErrorContexts.CurrentCellChange)
+                {
+                    MessageBox.Show("Cell change");
+                }
+                if (anError.Context == DataGridViewDataErrorContexts.Parsing)
+                {
+                    MessageBox.Show("parsing error");
+                }
+                if (anError.Context == DataGridViewDataErrorContexts.LeaveControl)
+                {
+                    MessageBox.Show("leave control error");
+                }
+
+                if ((anError.Exception) is ConstraintException)
+                {
+                    DataGridView view = (DataGridView)sender;
+                    view.Rows[anError.RowIndex].ErrorText = "an error";
+                    view.Rows[anError.RowIndex].Cells[anError.ColumnIndex].ErrorText = "an error";
+
+                    anError.ThrowException = false;
+                }
+
         }
     }
 }

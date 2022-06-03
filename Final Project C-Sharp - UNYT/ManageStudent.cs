@@ -33,8 +33,8 @@ namespace Final_Project_C_Sharp___UNYT
             DataGridView_student.ReadOnly = true;
             DataGridView_student.DataSource = student.getStudentlist(new MySqlCommand("SELECT * FROM `student`"));
             DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
-            // column 7 is the image column index
-            imageColumn = (DataGridViewImageColumn)DataGridView_student.Columns[7];
+            // column 8 is the image column index
+            imageColumn = (DataGridViewImageColumn)DataGridView_student.Columns[8];
             imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
         }
 
@@ -44,16 +44,24 @@ namespace Final_Project_C_Sharp___UNYT
             // the application display all student information in DataGridView
             //information- student ID, first name, last name, gender, phone number, address, image
             textBox_id.Text = DataGridView_student.CurrentRow.Cells[0].Value.ToString();
+
             textBox_Fname.Text = DataGridView_student.CurrentRow.Cells[1].Value.ToString();
+            
             textBox_Lname.Text = DataGridView_student.CurrentRow.Cells[2].Value.ToString();
-
+            
             dateTimePicker1.Value = (DateTime)DataGridView_student.CurrentRow.Cells[3].Value;
-            if (DataGridView_student.CurrentRow.Cells[4].Value.ToString() == "Male")
-                radioButton_male.Checked = true;
+            
+            textBox_phone.Text = DataGridView_student.CurrentRow.Cells[4].Value.ToString();
 
-            textBox_phone.Text = DataGridView_student.CurrentRow.Cells[5].Value.ToString();
+            if (DataGridView_student.CurrentRow.Cells[5].Value.ToString() == "Male")
+                radioButton_male.Checked = true;
+            
             textBox_address.Text = DataGridView_student.CurrentRow.Cells[6].Value.ToString();
-            byte[] img = (byte[])DataGridView_student.CurrentRow.Cells[7].Value;
+
+            if (DataGridView_student.CurrentRow.Cells[7].Value.ToString() == "4 Year")
+                fourth_year_program_rb.Checked = true;
+
+            byte[] img = (byte[])DataGridView_student.CurrentRow.Cells[8].Value;
             MemoryStream ms = new MemoryStream(img); //display images
             pictureBox_student.Image = Image.FromStream(ms);
         }
@@ -79,6 +87,7 @@ namespace Final_Project_C_Sharp___UNYT
             textBox_phone.Clear();
             textBox_address.Clear();
             radioButton_male.Checked = true;
+            fourth_year_program_rb.Checked = true;
             dateTimePicker1.Value = DateTime.Now;
             pictureBox_student.Image = null;
         }
@@ -110,6 +119,7 @@ namespace Final_Project_C_Sharp___UNYT
             string phone = textBox_phone.Text;
             string address = textBox_address.Text;
             string gender = radioButton_male.Checked ? "Male" : "Female";
+            string program = fourth_year_program_rb.Checked ? "4 Year" : "3 Year";
 
 
             //we need to check student age between 10 and 100
@@ -129,7 +139,7 @@ namespace Final_Project_C_Sharp___UNYT
                     MemoryStream ms = new MemoryStream();
                     pictureBox_student.Image.Save(ms, pictureBox_student.Image.RawFormat);
                     byte[] img = ms.ToArray();
-                    if (student.updateStudent(id, fname, lname, bdate, gender, phone, address, img))
+                    if (student.updateStudent(id, fname, lname, bdate, gender, phone, address, program, img))
                     {
                         showTable();
                         //prints the message that student data are update it 
@@ -155,7 +165,7 @@ namespace Final_Project_C_Sharp___UNYT
         {
             DataGridView_student.DataSource = student.searchStudent(txtB_search.Text);
             DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
-            imageColumn = (DataGridViewImageColumn)DataGridView_student.Columns[7];
+            imageColumn = (DataGridViewImageColumn)DataGridView_student.Columns[8];
             imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
         }
 
@@ -168,6 +178,41 @@ namespace Final_Project_C_Sharp___UNYT
             if (opf.ShowDialog() == DialogResult.OK)
                 pictureBox_student.Image = Image.FromFile(opf.FileName);
         }
+
+        private void DataGridView_student_DataError(object sender, DataGridViewDataErrorEventArgs anError)
+        {
+            //This event is used to avoid the error of DataGridview Error
+
+            MessageBox.Show("Error happened " + anError.Context.ToString());
+
+            if (anError.Context == DataGridViewDataErrorContexts.Commit)
+            {
+                MessageBox.Show("Commit error");
+            }
+            if (anError.Context == DataGridViewDataErrorContexts.CurrentCellChange)
+            {
+                MessageBox.Show("Cell change");
+            }
+            if (anError.Context == DataGridViewDataErrorContexts.Parsing)
+            {
+                MessageBox.Show("parsing error");
+            }
+            if (anError.Context == DataGridViewDataErrorContexts.LeaveControl)
+            {
+                MessageBox.Show("leave control error");
+            }
+
+            if ((anError.Exception) is ConstraintException)
+            {
+                DataGridView view = (DataGridView)sender;
+                view.Rows[anError.RowIndex].ErrorText = "an error";
+                view.Rows[anError.RowIndex].Cells[anError.ColumnIndex].ErrorText = "an error";
+
+                anError.ThrowException = false;
+            }
+        }
+
+  
     }
 }
 

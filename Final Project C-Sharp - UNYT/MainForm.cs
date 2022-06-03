@@ -26,6 +26,7 @@ namespace Final_Project_C_Sharp___UNYT
         private void MainForm_Load(object sender, EventArgs e)
         {
             studentCount();
+            programCount();
             // populate the combobox with courses name which the application get from the database.
             comboBox_course.DataSource = course.getCourse(new MySqlCommand("SELECT * FROM `course`"));
             comboBox_course.DisplayMember = "CourseName";
@@ -39,6 +40,15 @@ namespace Final_Project_C_Sharp___UNYT
             label_totalStd.Text = "Total Students : " + student.totalStudent();
             label_maleStd.Text = "Male : " + student.maleStudent();
             label_femaleStd.Text = "Female : " + student.femaleStudent();
+
+        }
+
+        private void programCount()
+        {
+            //Display the values
+            aPrograms.Text = "Academic Programs : " + student.totalPrograms();
+            threeYear.Text = "3 Year : " + student.threeYearProgram();
+            fourthYear.Text = "4 Year : " + student.fourthYearProgram();
 
         }
 
@@ -200,5 +210,6 @@ namespace Final_Project_C_Sharp___UNYT
             label_cmale.Text = "Male : " + student.exeCount("SELECT COUNT(*) FROM student INNER JOIN score ON score.StudentId = student.StdId WHERE score.CourseName = '" + comboBox_course.Text + "' AND student.Gender = 'Male'");
             label_cfemale.Text = "Female : " + student.exeCount("SELECT COUNT(*) FROM student INNER JOIN score ON score.StudentId = student.StdId WHERE score.CourseName = '" + comboBox_course.Text + "' AND student.Gender = 'Female'");
         }
+
     }
 }

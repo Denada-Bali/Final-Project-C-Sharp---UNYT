@@ -16,7 +16,7 @@ namespace Final_Project_C_Sharp___UNYT
     {
         //mysql connection represent an open connection to my database
         //connection string is a string that specifies information about data source     //The VALUES command specifies the values of an INSERT INTO statement.
-        MySqlCommand command = new MySqlCommand("INSERT INTO `score`(`StudentId`, `CourseName`, `Grade`, `LetterGrade`) VALUES (@stid,@cn,@gra,@lgr)", connect.getconnection);
+        MySqlCommand command = new MySqlCommand("INSERT INTO `score`(`StudentId`, `CourseName`, `Score`, `Grade`) VALUES (@stid,@cn,@gra,@lgr)", connect.getconnection);
         
         // add dates in my database server
         //@stid,@cn,@gra,@lgr
@@ -24,7 +24,7 @@ namespace Final_Project_C_Sharp___UNYT
         command.Parameters.Add("@cn", MySqlDbType.VarChar).Value = courName;
         command.Parameters.Add("@gra", MySqlDbType.Double).Value = gra;
         command.Parameters.Add("@lgr", MySqlDbType.VarChar).Value = lgr;
-        connect.openConnect();// open the connection
+            connect.openConnect();// open the connection
           //returns the number of rows affected by the query we are executing.
             if (command.ExecuteNonQuery() == 1)
         {
@@ -58,17 +58,29 @@ namespace Final_Project_C_Sharp___UNYT
         else
         { return false; }
     }
+
+        public bool checkProgram(int stdId, string programY)
+        {
+            DataTable table = getList(new MySqlCommand("SELECT * FROM `score` WHERE `StudentId`= '" + stdId + "' AND `Program`= '" + programY));
+            if (table.Rows.Count > 0)
+            { return true; }
+            else
+            { return false; }
+
+        }
     // Create A function to edit grade data
     public bool updateScore(int stdid, string scn, double grade, string LeGrade)
     {
-        MySqlCommand command = new MySqlCommand("UPDATE `score` SET `Grade`=@gra,`LetterGrade`=@lgr WHERE `StudentId`=@stid AND `CourseName`=@scn", connect.getconnection);
+        MySqlCommand command = new MySqlCommand("UPDATE `score` SET `Grade`=@gra,`Grade`=@lgr WHERE `StudentId`=@stid AND `CourseName`=@scn", connect.getconnection);
         //@stid,@sco,@desc
         command.Parameters.Add("@scn", MySqlDbType.VarChar).Value = scn;
         command.Parameters.Add("@stid", MySqlDbType.Int32).Value = stdid;
         command.Parameters.Add("@gra", MySqlDbType.Double).Value = grade;
         command.Parameters.Add("@lgr", MySqlDbType.VarChar).Value = LeGrade;
+
         connect.openConnect();
-        if (command.ExecuteNonQuery() == 1)
+        
+            if (command.ExecuteNonQuery() == 1)
         {
             connect.closeConnect();
             return true;
